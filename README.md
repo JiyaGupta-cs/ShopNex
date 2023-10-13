@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# TextTrove - A Text Analyzer :pencil2: #
+## About The Project ##
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TextTrove is a versatile text processing and analysis tool designed to make working with text easier and more efficient. Whether you're a content creator, a student, or a data scientist, this tool provides a range of essential features to help you understand, manipulate, and extract meaningful insights from text.
 
-## Available Scripts
+## Features - ##
+:abcd: **Lowercase Conversion:** This feature converts all the text to lowercase. It's useful for standardizing text and making it consistent, especially for text mining and analysis.
 
-In the project directory, you can run:
+:capital_abcd: **Uppercase Conversion:** Similar to lowercase conversion, this feature converts text to uppercase. It can also be valuable for standardization and emphasis.
 
-### `npm start`
+ 🔊: **Text-to-Speech:** This feature allows users to input text and have it read aloud using a text-to-speech engine. It can be beneficial for accessibility and enhancing the user experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+8️⃣ **Word Count**: This feature calculates the number of words in the text. It typically considers spaces and punctuation to identify word boundaries.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+9️⃣ **Character Count:** This feature counts the total number of characters in the text, including spaces and punctuation.
 
-### `npm test`
+:alarm_clock: **Time to Read:** Estimate the time it would take for an average reader to read the text at a standard reading pace. This can be presented in minutes or minutes and seconds.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Built With - ##
+  * React JS :atom_symbol:
+  * Bootstrap
+## Getting Started :octocat: ##
+```
+$ git clone https://github.com/JiyaGupta-cs/TextTrove-A_Text_Analyzer.git
+$ cd TextTrove-A_Text_Analyzer/
+$ npm install
+$ npm start 
+```
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
