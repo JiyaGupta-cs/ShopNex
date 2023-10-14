@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ShopContextProvider from './Context/ShopContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    {/* By this we can provide data to all the pages of App */}
+    <ShopContextProvider>    
     <App />
+    </ShopContextProvider>
+    
   </React.StrictMode>
 );
 
