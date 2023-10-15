@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    margin-bottom: 100px;
 }
 .popular h1 {
     color: #171717;
