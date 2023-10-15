@@ -1,7 +1,7 @@
-# ShopNex - An Ecommerce App :pencil2: #
+# ShopNex - An Ecommerce App 🛍️ #
 
-## Live Link : :link: ##
-[shopnex.vercel.app](https://shopnex.vercel.app/)
+## Live Link : ##
+[shopnex.vercel.app](https://shopnex.vercel.app/){:target="_blank"}
 
 ## About The Project ##
 
