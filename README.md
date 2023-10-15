@@ -1,17 +1,20 @@
 # ShopNex - An Ecommerce App :pencil2: #
 
 ## Live Link : :link: ##
-shopnex.vercel.app
+[shopnex.vercel.app](https://shopnex.vercel.app/)
 
 ## About The Project ##
 
-<!-- TextTrove is a versatile text processing and analysis tool designed to make working with text easier and more efficient. Whether you're a content creator, a student, or a data scientist, this tool provides a range of essential features to help you understand, manipulate, and extract meaningful insights from text. -->
+Shopnex is your one-stop destination for fashionable clothing for the entire family. Discover a wide selection of men's, women's, and kids' apparel, ensuring that everyone can find the perfect style and fit. Shop with confidence and convenience at Shopnex for all your clothing needs.
 
 ## Features - ##
 
 🏠 **Home page :** The main landing page for your platform.
+
 👪 **Category-wise Product listing page :** Browse and filter products by category.
+
 📄 **Individual product page :** Detailed info on a single product.
+
 🛒 **Cart Feature :** Add, remove, and purchase products.
 
 ## Built With - ##
