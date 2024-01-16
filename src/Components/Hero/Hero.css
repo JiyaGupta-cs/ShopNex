@@ -57,3 +57,7 @@
     align-items: center;
     justify-content: center;
 }
+.hero-right img{
+    height: 650px;
+
+}
