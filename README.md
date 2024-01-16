@@ -1,7 +1,7 @@
 # ShopNex - An Ecommerce App 🛍️ #
 
 ## Live Link : ##
-[shopnex.vercel.app](https://shopnex.vercel.app/){:target="_blank"}
+[shopnex.vercel.app](https://shopnex.vercel.app/)
 
 ## About The Project ##
 
@@ -27,4 +27,9 @@ $ cd ShopNex/
 $ npm install
 $ npm start 
 ```
+
+
+## Contributing Guidelines :octocat: ##
+
+[https://github.com/JiyaGupta-cs/mytwit/blob/master/contributing.md](https://github.com/JiyaGupta-cs/shopnex/blob/master/contributing.md)
 
