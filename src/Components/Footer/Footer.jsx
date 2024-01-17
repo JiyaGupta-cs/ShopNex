@@ -4,6 +4,7 @@ import footer_logo from '../Assets/logo_big.png'
 import instagram_icon from '../Assets/instagram_icon.png'
 import pintester_icon from '../Assets/pintester_icon.png'
 import whatsapp_icon from '../Assets/whatsapp_icon.png'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -16,8 +17,10 @@ const Footer = () => {
                 <li>Company</li>
                 <li>Products</li>
                 <li>Offices</li>
-                <li>About</li>
-                <li>Contact</li>
+               <li> <Link className="link" to='/about'>About</Link></li>
+                {/* <li onClick={()=>{setMenu("about")}}><Link to='/About'>About</Link>{menu=="about"?<hr/>:<></>}</li> */}
+                
+                <li> <Link className="link" to='/contact'>Contact Us</Link></li>
             </ul>
             <div className="footer-social-icon">
                 <div className="footer-icons-container">

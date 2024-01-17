@@ -1,0 +1,23 @@
+.container-my{
+    margin: 40px;
+    margin-left: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#aboutheading{
+    width: 100%;
+    align-content: center;
+    margin-bottom: 30px;
+}
+.content{
+    margin-top: 0;
+    flex-shrink: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* .txt{
+    margin-right: 20px;
+    width: 330px;
+    flex-shrink: 1;
+} */
