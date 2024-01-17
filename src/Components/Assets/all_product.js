@@ -10,30 +10,49 @@ import p9_img from "./product_9.png";
 import p10_img from "./product_10.png";
 import p11_img from "./product_11.png";
 import p12_img from "./product_12.png";
-import p13_img from "./product_13.png";
-import p14_img from "./product_14.png";
-import p15_img from "./product_15.png";
-import p16_img from "./product_16.png";
-import p17_img from "./product_17.png";
-import p18_img from "./product_18.png";
-import p19_img from "./product_19.png";
-import p20_img from "./product_20.png";
-import p21_img from "./product_21.png";
-import p22_img from "./product_22.png";
-import p23_img from "./product_23.png";
-import p24_img from "./product_24.png";
-import p25_img from "./product_25.png";
-import p26_img from "./product_26.png";
-import p27_img from "./product_27.png";
-import p28_img from "./product_28.png";
-import p29_img from "./product_29.png";
-import p30_img from "./product_30.png";
-import p31_img from "./product_31.png";
-import p32_img from "./product_32.png";
-import p33_img from "./product_33.png";
-import p34_img from "./product_34.png";
-import p35_img from "./product_35.png";
-import p36_img from "./product_36.png";
+import p13_img from "./product_37 (1).jpg";
+import p14_img from "./product_38 (1).jpg";
+import p15_img from "./product_39 (1).jpg";
+import p16_img from "./product_40 (1).jpg";
+import p17_img from "./product_41 (1).jpg";
+import p18_img from "./product_42 (1).jpg";
+import p19_img from "./product_43 (1).jpg";
+import p20_img from "./product_44 (1).jpg";
+
+import p21_img from "./product_13.png";
+import p22_img from "./product_14.png";
+import p23_img from "./product_15.png";
+import p24_img from "./product_16.png";
+import p25_img from "./product_17.png";
+import p26_img from "./product_18.png";
+import p27_img from "./product_19.png";
+import p28_img from "./product_20.png";
+import p29_img from "./product_21.png";
+import p30_img from "./product_22.png";
+import p31_img from "./product_23.png";
+import p32_img from "./product_24.png";
+import p33_img from "./product_45.jpg";
+import p34_img from "./product_46.jpg";
+import p35_img from "./product_47.jpg";
+import p36_img from "./product_48.jpg";
+import p37_img from "./product_49 (1).jpg";
+import p38_img from "./product_52.jpg";
+import p39_img from "./product_51 (1).jpg";
+import p40_img from "./product_50 (1).jpg";
+
+import p41_img from "./product_25.png";
+import p42_img from "./product_26.png";
+import p43_img from "./product_27.png";
+import p44_img from "./product_28.png";
+import p45_img from "./product_29.png";
+import p46_img from "./product_30.png";
+import p47_img from "./product_31.png";
+import p48_img from "./product_32.png";
+import p49_img from "./product_33.png";
+import p50_img from "./product_34.png";
+import p51_img from "./product_35.png";
+import p52_img from "./product_36.png";
+
 
 let all_product = [
   {
@@ -134,64 +153,64 @@ let all_product = [
   },
   {
     id: 13,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    category: "women",
     image: p13_img,
     new_price: 85.0,
     old_price: 120.5,
   },
   {
     id: 14,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    category: "women",
     image: p14_img,
     new_price: 85.0,
     old_price: 120.5,
   },
   {
     id: 15,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    category: "women",
     image: p15_img,
     new_price: 85.0,
     old_price: 120.5,
   },
   {
     id: 16,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    category: "women",
     image: p16_img,
     new_price: 85.0,
     old_price: 120.5,
   },
   {
     id: 17,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    category: "women",
     image: p17_img,
     new_price: 85.0,
     old_price: 120.5,
   },
   {
     id: 18,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    category: "women",
     image: p18_img,
     new_price: 85.0,
     old_price: 120.5,
   },
   {
     id: 19,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    category: "women",
     image: p19_img,
     new_price: 85.0,
     old_price: 120.5,
   },
   {
     id: 20,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    category: "women",
     image: p20_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -201,129 +220,259 @@ let all_product = [
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
     category: "men",
     image: p21_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 850.0,
+    old_price: 1200.5,
   },
   {
     id: 22,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
     category: "men",
     image: p22_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 850.0,
+    old_price: 1200.5,
   },
   {
     id: 23,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
     category: "men",
     image: p23_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 850.0,
+    old_price: 1200.5,
   },
   {
     id: 24,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
     category: "men",
     image: p24_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 850.0,
+    old_price: 1200.5,
   },
   {
     id: 25,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "men",
     image: p25_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 850.0,
+    old_price: 1200.5,
   },
   {
     id: 26,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "men",
     image: p26_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 850.0,
+    old_price: 1200.5,
   },
   {
     id: 27,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "men",
     image: p27_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 850.0,
+    old_price: 1200.5,
   },
   {
     id: 28,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "men",
     image: p28_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 850.0,
+    old_price: 1200.5,
   },
   {
     id: 29,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "men",
     image: p29_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 850.0,
+    old_price: 1200.5,
   },
   {
     id: 30,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "men",
     image: p30_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 850.0,
+    old_price: 1200.5,
   },
   {
     id: 31,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "men",
     image: p31_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 850.0,
+    old_price: 1200.5,
   },
   {
     id: 32,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "men",
     image: p32_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 850.0,
+    old_price: 1200.5,
   },
+
   {
     id: 33,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "men",
     image: p33_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 850.0,
+    old_price: 1200.5,
   },
   {
     id: 34,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "men",
     image: p34_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 850.0,
+    old_price: 1200.5,
   },
   {
     id: 35,
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "men",
+    image: p35_img,
+    new_price: 850.0,
+    old_price: 1200.5,
+  },
+  {
+    id: 36,
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "men",
+    image: p36_img,
+    new_price: 850.0,
+    old_price: 1200.5,
+  },
+  {
+    id: 37,
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "men",
+    image: p37_img,
+    new_price: 850.0,
+    old_price: 1200.5,
+  },
+  {
+    id: 38,
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "men",
+    image: p38_img,
+    new_price: 850.0,
+    old_price: 1200.5,
+  },
+  {
+    id: 39,
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "men",
+    image: p39_img,
+    new_price: 850.0,
+    old_price: 1200.5,
+  },
+  {
+    id: 40,
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "men",
+    image: p40_img,
+    new_price: 850.0,
+    old_price: 1200.5,
+  },
+  {
+    id: 41,
     name: "Boys Orange Colourblocked Hooded Sweatshirt",
     category: "kid",
-    image: p35_img,
+    image: p41_img,
     new_price: 85.0,
     old_price: 120.5,
   },
   {
-    id: 36,
+    id: 42,
     name: "Boys Orange Colourblocked Hooded Sweatshirt",
     category: "kid",
-    image: p36_img,
+    image: p42_img,
     new_price: 85.0,
     old_price: 120.5,
   },
+  {
+    id: 43,
+    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    category: "kid",
+    image: p43_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 44,
+    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    category: "kid",
+    image: p44_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 45,
+    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    category: "kid",
+    image: p45_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 46,
+    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    category: "kid",
+    image: p46_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 47,
+    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    category: "kid",
+    image: p47_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 48,
+    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    category: "kid",
+    image: p48_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 49,
+    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    category: "kid",
+    image: p49_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 50,
+    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    category: "kid",
+    image: p50_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 51,
+    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    category: "kid",
+    image: p51_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 52,
+    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    category: "kid",
+    image: p52_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  
 ];
 
 export default all_product;
