@@ -11,7 +11,8 @@ import men_banner from "./Components/Assets/banner_mens.png";
 import women_banner from "./Components/Assets/banner_women.png";
 import kids_banner from "./Components/Assets/banner_kids.png";
 import ScrollUpButton from "./Components/ScrollUpButton/ScrollUpButton";
-
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
 function App() {
   return (
     <div>
@@ -36,6 +37,8 @@ function App() {
           </Route>
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSignup />} />
+          <Route path='/about' element={<About/>} />
+        <Route path='/contact' element={<Contact/>} />
         </Routes>
         <ScrollUpButton />
         <Footer />
