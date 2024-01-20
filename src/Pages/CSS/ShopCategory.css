@@ -41,3 +41,21 @@
     font-size: 18px;
     font-weight: 500;
 }
+
+@media only screen and (max-width: 600px) {
+    .shopcategory-products {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1130px){
+    .shopcategory-products{
+        grid-template-columns: 1fr 1fr;
+    }
+    }
+@media only screen and (min-width: 1130px) and (max-width: 1200px){
+    .shopcategory-products{
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    }
+}

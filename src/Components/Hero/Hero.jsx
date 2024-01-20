@@ -7,7 +7,7 @@ import hero_image from '../Assets/hero_image.png'
 const Hero = () => {
     return (
         <div className='hero'>
-            <div className="hero-left">
+            <div className="hero-left common-container">
                 <h2>NEW ARRIVALS ONLY</h2>
                 <div>
                     <div className="hero-hand-icon">
@@ -22,7 +22,7 @@ const Hero = () => {
                     <img src={arrow_icon} alt="" />
                 </div>
             </div>
-            <div className="hero-right">
+            <div className="hero-right common-container">
                 <img src={hero_image} alt="" />
             </div>
         </div>
