@@ -18,6 +18,18 @@ import p17_img from "./product_41 (1).jpg";
 import p18_img from "./product_42 (1).jpg";
 import p19_img from "./product_43 (1).jpg";
 import p20_img from "./product_44 (1).jpg";
+import p61_img from "./product_53.jpg";
+import p62_img from "./product_54.jpg";
+import p63_img from "./product_55.jpg";
+import p64_img from "./product_56.jpg";
+import p65_img from "./product_57.jpg";
+import p66_img from "./product_58.jpg";
+import p67_img from "./product_59.jpg";
+import p68_img from "./product_60.jpg";
+import p69_img from "./product_4.png";
+import p70_img from "./product_5.png";
+import p71_img from "./product_6.png";
+import p72_img from "./product_7.png";
 
 import p21_img from "./product_13.png";
 import p22_img from "./product_14.png";
@@ -39,6 +51,18 @@ import p37_img from "./product_49 (1).jpg";
 import p38_img from "./product_52.jpg";
 import p39_img from "./product_51 (1).jpg";
 import p40_img from "./product_50 (1).jpg";
+import p53_img from "./product_61.jpg";
+import p54_img from "./product_62.jpg";
+import p55_img from "./product_63.jpg";
+import p56_img from "./product_64jpeg.jpg";
+import p57_img from "./product_14.png";
+import p58_img from "./product_15.png";
+import p59_img from "./product_16.png";
+import p60_img from "./product_17.png";
+import p73_img from "./product_18.png";
+import p74_img from "./product_19.png";
+import p75_img from "./product_20.png";
+import p76_img from "./product_21.png";
 
 import p41_img from "./product_25.png";
 import p42_img from "./product_26.png";
@@ -52,7 +76,6 @@ import p49_img from "./product_33.png";
 import p50_img from "./product_34.png";
 import p51_img from "./product_35.png";
 import p52_img from "./product_36.png";
-
 
 let all_product = [
   {
@@ -212,6 +235,102 @@ let all_product = [
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
     category: "women",
     image: p20_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 61,
+    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    category: "women",
+    image: p61_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 62,
+    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    category: "women",
+    image: p62_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 63,
+    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    category: "women",
+    image: p63_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 64,
+    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    category: "women",
+    image: p64_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 65,
+    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    category: "women",
+    image: p65_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 66,
+    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    category: "women",
+    image: p66_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 67,
+    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    category: "women",
+    image: p67_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 68,
+    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    category: "women",
+    image: p68_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 69,
+    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    category: "women",
+    image: p69_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 70,
+    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    category: "women",
+    image: p70_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 71,
+    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    category: "women",
+    image: p71_img,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 72,
+    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    category: "women",
+    image: p72_img,
     new_price: 85.0,
     old_price: 120.5,
   },
@@ -376,6 +495,95 @@ let all_product = [
     new_price: 850.0,
     old_price: 1200.5,
   },
+  {
+    id: 53,
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "men",
+    image: p53_img,
+    new_price: 850.0,
+    old_price: 1200.5,
+  },
+  {
+    id: 54,
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "men",
+    image: p54_img,
+    new_price: 850.0,
+    old_price: 1200.5,
+  },
+  {
+    id: 55,
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "men",
+    image: p55_img,
+    new_price: 850.0,
+    old_price: 1200.5,
+  },
+  {
+    id: 56,
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "men",
+    image: p56_img,
+    new_price: 850.0,
+    old_price: 1200.5,
+  },
+  
+  {id: 57,
+  name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+  category: "men",
+  image: p57_img,
+  new_price: 850.0,
+  old_price: 1200.5,
+},
+{id: 58,
+  name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+  category: "men",
+  image: p58_img,
+  new_price: 850.0,
+  old_price: 1200.5,
+},
+{id: 59,
+  name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+  category: "men",
+  image: p59_img,
+  new_price: 850.0,
+  old_price: 1200.5,
+},
+{id: 60,
+  name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+  category: "men",
+  image: p60_img,
+  new_price: 850.0,
+  old_price: 1200.5,
+},
+{id: 73,
+  name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+  category: "men",
+  image: p73_img,
+  new_price: 850.0,
+  old_price: 1200.5,
+},
+{id: 74,
+  name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+  category: "men",
+  image: p74_img,
+  new_price: 850.0,
+  old_price: 1200.5,
+},
+{id: 75,
+  name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+  category: "men",
+  image: p75_img,
+  new_price: 850.0,
+  old_price: 1200.5,
+},
+{id: 76,
+  name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+  category: "men",
+  image: p76_img,
+  new_price: 850.0,
+  old_price: 1200.5,
+},
   {
     id: 41,
     name: "Boys Orange Colourblocked Hooded Sweatshirt",
