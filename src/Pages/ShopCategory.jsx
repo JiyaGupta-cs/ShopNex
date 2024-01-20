@@ -9,6 +9,10 @@ const ShopCategory = (props) => {
   const { all_product } = useContext(ShopContext);
   const [sorting, setSorting] = useState(null);
   const [filteredProducts, setFilteredProducts] = useState([]);
+ 
+  useEffect(() => {
+    setSorting("");
+  }, [props.category]);
 
   useEffect(() => {
     // Creating a temporary array to avoid changing original data
@@ -20,10 +24,6 @@ const ShopCategory = (props) => {
     }
     setFilteredProducts(productsCopy);
   }, [sorting, all_product]);
-
-  useEffect(() => {
-    setSorting(null);
-  }, [props.category]);
 
   return (
     <div className="shop-category">
