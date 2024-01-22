@@ -7,17 +7,21 @@
 
 #aboutheading{
     width: 100%;
+    font-size: 5vw;
     align-content: center;
     margin-bottom: 30px;
 }
 .content{
     margin-top: 0;
     flex-shrink: 1;
+    max-width: 70vw;
     display: flex;
     flex-wrap: wrap;
 }
-/* .txt{
-    margin-right: 20px;
-    width: 330px;
-    flex-shrink: 1;
-} */
+.txt{
+    font-size: large;
+}
+.container-2{
+    margin: 5px 40px 5px 40px;
+
+}
