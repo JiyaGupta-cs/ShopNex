@@ -72,7 +72,9 @@
     background: red;
     color: white;
 }
-
+/* .hamburger{
+    display: none;
+} */
 @media screen and (max-width: 900px){
     .navbar{
         width: 100%;
@@ -112,3 +114,4 @@
         margin-right: 58px;
     }
 }
+
