@@ -10,10 +10,10 @@ const ShopCategory = (props) => {
   const [page, setPage] = useState(1);
 
   const filteredProducts = all_product.filter(item => item.category === props.category);
-  const totalProducts = filteredProducts.length;
+  const totalProducts = all_product.length; 
 
   const handleExploreMore = () => {
-    // Increment the page for the next set
+    
     setPage((prevPage) => prevPage + 1);
   };
 
