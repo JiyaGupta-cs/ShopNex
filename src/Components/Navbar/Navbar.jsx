@@ -13,8 +13,10 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className="nav-logo">
-        <img src={logo} alt="" />
-        <p>ShopNex</p>
+        <Link className="nav-logo-link" to="/">
+          <img src={logo} alt="ShopNex Logo" style={{ marginRight: '10px' }} />
+          <p>ShopNex</p>
+        </Link>
       </div>
       <ul className="nav-menu">
         <li onClick={()=>{setMenu("shop")}}><Link to='/'>Shop</Link>{menu=="shop"?<hr/>:<></>}</li>

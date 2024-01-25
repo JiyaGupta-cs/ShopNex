@@ -9,6 +9,11 @@
     align-items: center;
     gap: 10px;
 }
+.nav-logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }  
 .nav-logo p{
     color: #171717;
     font-size: 38px;
