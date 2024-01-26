@@ -59,6 +59,28 @@
   position: relative;
   right: 10.5%;
 }
+.newsletter {
+  /* existing styles */
+
+  /* Add animation properties */
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+/* Define the keyframes for the floating animation */
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @media screen and (max-width: 600px){
   .newsletter {
     height: 60vh;
@@ -83,5 +105,3 @@
   .newsletter div button {
     width: 160px;
     right: 30%;
-  }
-}

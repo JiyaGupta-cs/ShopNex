@@ -1,13 +1,27 @@
-.offers{
+.offers {
     width: 65%;
-    height:60vh;
+    height: 60vh;
     display: flex;
     margin: auto;
     padding: 0px 140px;
     margin-bottom: 150px;
     background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    animation: floating 3s ease-in-out infinite;
 }
-.offers-left{
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.offers-left {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -17,17 +31,20 @@
     line-height: 1.1;
     margin-top: 40px;
 }
-.offers-left h1{
+
+.offers-left h1 {
     color: #171717;
     font-size: 80px;
     font-weight: 600;
 }
-.offers-left p{
+
+.offers-left p {
     color: #171717;
     font-size: 22px;
     font-weight: 600;
 }
-.offers-left button{
+
+.offers-left button {
     width: 282px;
     height: 70px;
     border-radius: 35px;
@@ -39,7 +56,8 @@
     margin-top: 30px;
     cursor: pointer;
 }
-.offers-right{
+
+.offers-right {
     /* flex: 1; */
     display: flex;
     align-items: center;
@@ -76,6 +94,7 @@
         display: none;
     }
 }
+
 @media only screen and (min-width: 601px) and (max-width: 1130px){
     .offers{
         width: 100%;
@@ -102,3 +121,4 @@
         width: 50%;
     }
 }
+
