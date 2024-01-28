@@ -43,6 +43,8 @@ let all_product = [
     image: p1_img,
     new_price: 50.0,
     old_price: 80.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 2,
@@ -51,6 +53,8 @@ let all_product = [
     image: p2_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 3,
@@ -59,6 +63,8 @@ let all_product = [
     image: p3_img,
     new_price: 60.0,
     old_price: 100.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 4,
@@ -67,6 +73,8 @@ let all_product = [
     image: p4_img,
     new_price: 100.0,
     old_price: 150.0,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 5,
@@ -75,6 +83,8 @@ let all_product = [
     image: p5_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 6,
@@ -83,6 +93,8 @@ let all_product = [
     image: p6_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 7,
@@ -91,6 +103,8 @@ let all_product = [
     image: p7_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 8,
@@ -99,6 +113,8 @@ let all_product = [
     image: p8_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 9,
@@ -107,6 +123,8 @@ let all_product = [
     image: p9_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 10,
@@ -115,6 +133,8 @@ let all_product = [
     image: p10_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 11,
@@ -123,6 +143,8 @@ let all_product = [
     image: p11_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 12,
@@ -131,6 +153,8 @@ let all_product = [
     image: p12_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 13,
@@ -139,6 +163,8 @@ let all_product = [
     image: p13_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 14,
@@ -147,6 +173,8 @@ let all_product = [
     image: p14_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 15,
@@ -155,6 +183,8 @@ let all_product = [
     image: p15_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 16,
@@ -163,6 +193,8 @@ let all_product = [
     image: p16_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 17,
@@ -171,6 +203,8 @@ let all_product = [
     image: p17_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 18,
@@ -179,6 +213,8 @@ let all_product = [
     image: p18_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 19,
@@ -187,6 +223,8 @@ let all_product = [
     image: p19_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 20,
@@ -195,6 +233,8 @@ let all_product = [
     image: p20_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 21,
@@ -203,6 +243,8 @@ let all_product = [
     image: p21_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 22,
@@ -211,6 +253,8 @@ let all_product = [
     image: p22_img,
     new_price: 95.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 23,
@@ -219,6 +263,8 @@ let all_product = [
     image: p23_img,
     new_price: 75.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 24,
@@ -227,6 +273,8 @@ let all_product = [
     image: p24_img,
     new_price: 80.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 25,
@@ -235,6 +283,8 @@ let all_product = [
     image: p25_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 26,
@@ -243,6 +293,8 @@ let all_product = [
     image: p26_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 27,
@@ -251,6 +303,8 @@ let all_product = [
     image: p27_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 28,
@@ -259,6 +313,8 @@ let all_product = [
     image: p28_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 29,
@@ -267,6 +323,8 @@ let all_product = [
     image: p29_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 30,
@@ -275,6 +333,8 @@ let all_product = [
     image: p30_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 31,
@@ -283,6 +343,8 @@ let all_product = [
     image: p31_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 32,
@@ -291,6 +353,8 @@ let all_product = [
     image: p32_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 33,
@@ -299,6 +363,8 @@ let all_product = [
     image: p33_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 34,
@@ -307,6 +373,8 @@ let all_product = [
     image: p34_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 35,
@@ -315,6 +383,8 @@ let all_product = [
     image: p35_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 36,
@@ -323,6 +393,8 @@ let all_product = [
     image: p36_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
 ];
 

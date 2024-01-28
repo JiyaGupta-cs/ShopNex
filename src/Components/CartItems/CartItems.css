@@ -1,3 +1,7 @@
+.text-Align{
+    text-align: center;
+}
+
 .cartitems {
     margin: 100px 170px;
 }
@@ -10,7 +14,7 @@
 
 .cartitems-format-main {
     display: grid;
-    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     gap: 5px;
     padding: 20px 0px;
@@ -39,6 +43,7 @@
     height: 50px;
     border: 2px solid #ebebeb;
     background: #fff;
+    text-align: center;
 }
 
 .cartitems-down{
@@ -51,6 +56,7 @@
     flex-direction: column;
     margin-right: 200px;
     gap: 40px;
+    
 }
 .cartitems-total-item{
     display: flex;
