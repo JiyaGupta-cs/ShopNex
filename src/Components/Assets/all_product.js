@@ -85,6 +85,8 @@ let all_product = [
     image: p1_img,
     new_price: 50.0,
     old_price: 80.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 2,
@@ -93,6 +95,8 @@ let all_product = [
     image: p2_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 3,
@@ -101,6 +105,8 @@ let all_product = [
     image: p3_img,
     new_price: 60.0,
     old_price: 100.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 4,
@@ -109,6 +115,8 @@ let all_product = [
     image: p4_img,
     new_price: 100.0,
     old_price: 150.0,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 5,
@@ -117,6 +125,8 @@ let all_product = [
     image: p5_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 6,
@@ -125,6 +135,8 @@ let all_product = [
     image: p6_img,
     new_price: 75.0,
     old_price: 140.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 7,
@@ -133,6 +145,8 @@ let all_product = [
     image: p7_img,
     new_price: 95.0,
     old_price: 130.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 8,
@@ -141,6 +155,8 @@ let all_product = [
     image: p8_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 9,
@@ -149,6 +165,8 @@ let all_product = [
     image: p9_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 10,
@@ -157,6 +175,8 @@ let all_product = [
     image: p10_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 11,
@@ -165,6 +185,8 @@ let all_product = [
     image: p11_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 12,
@@ -173,6 +195,8 @@ let all_product = [
     image: p12_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 13,
@@ -181,6 +205,8 @@ let all_product = [
     image: p13_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 14,
@@ -189,6 +215,8 @@ let all_product = [
     image: p14_img,
     new_price: 95.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 15,
@@ -197,6 +225,8 @@ let all_product = [
     image: p15_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 16,
@@ -205,6 +235,8 @@ let all_product = [
     image: p16_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 17,
@@ -213,6 +245,8 @@ let all_product = [
     image: p17_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 18,
@@ -221,6 +255,8 @@ let all_product = [
     image: p18_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 19,
@@ -229,6 +265,8 @@ let all_product = [
     image: p19_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 20,
@@ -237,6 +275,8 @@ let all_product = [
     image: p20_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 61,
@@ -245,6 +285,8 @@ let all_product = [
     image: p61_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 62,
@@ -253,6 +295,8 @@ let all_product = [
     image: p62_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 63,
@@ -261,6 +305,8 @@ let all_product = [
     image: p63_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 64,
@@ -269,6 +315,8 @@ let all_product = [
     image: p64_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 65,
@@ -277,6 +325,8 @@ let all_product = [
     image: p65_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 66,
@@ -285,6 +335,8 @@ let all_product = [
     image: p66_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 67,
@@ -293,6 +345,8 @@ let all_product = [
     image: p67_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 68,
@@ -301,6 +355,8 @@ let all_product = [
     image: p68_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 69,
@@ -309,6 +365,8 @@ let all_product = [
     image: p69_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 70,
@@ -317,6 +375,8 @@ let all_product = [
     image: p70_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 71,
@@ -325,6 +385,8 @@ let all_product = [
     image: p71_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 72,
@@ -333,6 +395,8 @@ let all_product = [
     image: p72_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 21,
@@ -341,18 +405,20 @@ let all_product = [
     image: p21_img,
     new_price: 850.0,
     old_price: 1200.5,
+    size: "S",
+    Quantity: 1,
+
   },
   {
     id: 22,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
     category: "men",
     image: p22_img,
-
     new_price: 850.0,
     old_price: 1200.5,
-    new_price: 95.0,
-    old_price: 120.5,
-
+    size: "S",
+    Quantity: 1,
+   
   },
   {
     id: 23,
@@ -361,20 +427,18 @@ let all_product = [
     image: p23_img,
     new_price: 850.0,
     old_price: 1200.5,
-    new_price: 75.0,
-    old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 24,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
     category: "men",
     image: p24_img,
-
     new_price: 850.0,
     old_price: 1200.5,
-    new_price: 80.0,
-    old_price: 120.5,
-
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 25,
@@ -383,6 +447,8 @@ let all_product = [
     image: p25_img,
     new_price: 850.0,
     old_price: 1200.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 26,
@@ -391,6 +457,8 @@ let all_product = [
     image: p26_img,
     new_price: 850.0,
     old_price: 1200.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 27,
@@ -399,6 +467,8 @@ let all_product = [
     image: p27_img,
     new_price: 850.0,
     old_price: 1200.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 28,
@@ -407,6 +477,8 @@ let all_product = [
     image: p28_img,
     new_price: 850.0,
     old_price: 1200.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 29,
@@ -415,6 +487,8 @@ let all_product = [
     image: p29_img,
     new_price: 850.0,
     old_price: 1200.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 30,
@@ -423,6 +497,8 @@ let all_product = [
     image: p30_img,
     new_price: 850.0,
     old_price: 1200.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 31,
@@ -431,6 +507,8 @@ let all_product = [
     image: p31_img,
     new_price: 850.0,
     old_price: 1200.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 32,
@@ -439,6 +517,8 @@ let all_product = [
     image: p32_img,
     new_price: 850.0,
     old_price: 1200.5,
+    size: "S",
+    Quantity: 1,
   },
 
   {
@@ -448,6 +528,8 @@ let all_product = [
     image: p33_img,
     new_price: 850.0,
     old_price: 1200.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 34,
@@ -456,6 +538,8 @@ let all_product = [
     image: p34_img,
     new_price: 850.0,
     old_price: 1200.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 35,
@@ -464,6 +548,8 @@ let all_product = [
     image: p35_img,
     new_price: 850.0,
     old_price: 1200.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 36,
@@ -472,6 +558,8 @@ let all_product = [
     image: p36_img,
     new_price: 850.0,
     old_price: 1200.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 37,
@@ -480,6 +568,8 @@ let all_product = [
     image: p37_img,
     new_price: 850.0,
     old_price: 1200.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 38,
@@ -488,6 +578,8 @@ let all_product = [
     image: p38_img,
     new_price: 850.0,
     old_price: 1200.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 39,
@@ -496,6 +588,8 @@ let all_product = [
     image: p39_img,
     new_price: 850.0,
     old_price: 1200.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 40,
@@ -504,6 +598,8 @@ let all_product = [
     image: p40_img,
     new_price: 850.0,
     old_price: 1200.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 53,
@@ -512,6 +608,8 @@ let all_product = [
     image: p53_img,
     new_price: 850.0,
     old_price: 1200.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 54,
@@ -520,6 +618,8 @@ let all_product = [
     image: p54_img,
     new_price: 850.0,
     old_price: 1200.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 55,
@@ -528,6 +628,8 @@ let all_product = [
     image: p55_img,
     new_price: 850.0,
     old_price: 1200.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 56,
@@ -536,6 +638,8 @@ let all_product = [
     image: p56_img,
     new_price: 850.0,
     old_price: 1200.5,
+    size: "S",
+    Quantity: 1,
   },
   
   {id: 57,
@@ -544,6 +648,8 @@ let all_product = [
   image: p57_img,
   new_price: 850.0,
   old_price: 1200.5,
+  size: "S",
+  Quantity: 1,
 },
 {id: 58,
   name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
@@ -551,6 +657,8 @@ let all_product = [
   image: p58_img,
   new_price: 850.0,
   old_price: 1200.5,
+  size: "S",
+    Quantity: 1,
 },
 {id: 59,
   name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
@@ -558,6 +666,8 @@ let all_product = [
   image: p59_img,
   new_price: 850.0,
   old_price: 1200.5,
+ size: "S",
+    Quantity: 1,
 },
 {id: 60,
   name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
@@ -565,6 +675,8 @@ let all_product = [
   image: p60_img,
   new_price: 850.0,
   old_price: 1200.5,
+ size: "S",
+    Quantity: 1,
 },
 {id: 73,
   name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
@@ -572,6 +684,8 @@ let all_product = [
   image: p73_img,
   new_price: 850.0,
   old_price: 1200.5,
+ size: "S",
+    Quantity: 1,
 },
 {id: 74,
   name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
@@ -579,6 +693,8 @@ let all_product = [
   image: p74_img,
   new_price: 850.0,
   old_price: 1200.5,
+ size: "S",
+    Quantity: 1,
 },
 {id: 75,
   name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
@@ -586,6 +702,8 @@ let all_product = [
   image: p75_img,
   new_price: 850.0,
   old_price: 1200.5,
+ size: "S",
+    Quantity: 1,
 },
 {id: 76,
   name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
@@ -593,6 +711,8 @@ let all_product = [
   image: p76_img,
   new_price: 850.0,
   old_price: 1200.5,
+ size: "S",
+    Quantity: 1,
 },
   {
     id: 41,
@@ -601,6 +721,8 @@ let all_product = [
     image: p41_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 42,
@@ -609,6 +731,8 @@ let all_product = [
     image: p42_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 43,
@@ -617,6 +741,8 @@ let all_product = [
     image: p43_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 44,
@@ -625,6 +751,8 @@ let all_product = [
     image: p44_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 45,
@@ -633,6 +761,8 @@ let all_product = [
     image: p45_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 46,
@@ -641,6 +771,8 @@ let all_product = [
     image: p46_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 47,
@@ -649,6 +781,8 @@ let all_product = [
     image: p47_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 48,
@@ -657,6 +791,8 @@ let all_product = [
     image: p48_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 49,
@@ -665,6 +801,8 @@ let all_product = [
     image: p49_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 50,
@@ -673,6 +811,8 @@ let all_product = [
     image: p50_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 51,
@@ -681,6 +821,8 @@ let all_product = [
     image: p51_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   {
     id: 52,
@@ -689,6 +831,8 @@ let all_product = [
     image: p52_img,
     new_price: 85.0,
     old_price: 120.5,
+    size: "S",
+    Quantity: 1,
   },
   
 ];
