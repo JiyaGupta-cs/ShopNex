@@ -16,3 +16,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Custom scrollbar for WebKit browsers */
+body::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #6970cc; 
+  border-radius: 6px; /* Rounded corners of the thumb */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #bacfcf; 
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #6a9be0; 
+}
+
+/* Custom scrollbar for Firefox */
+body {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color:#6970cc; 
+}
+
+body:hover {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #283f33#330000; 
+}
