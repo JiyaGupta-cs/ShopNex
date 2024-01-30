@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './CSS/Contact.css'
+import { ShopContext } from '../Context/ShopContext';
 
 const Contact = () => {
+  const {theme}=useContext(ShopContext);
   return (
-    <div className="container-my">
+    <div className={"container-my_"+theme}>
       <h1 id="myheading">
         Contact Us
       </h1>

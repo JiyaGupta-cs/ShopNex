@@ -1,10 +1,16 @@
-.container-my{
+.container-my_dark{
     margin: 40px;
     margin-left: 60px;
     display: flex;
     flex-wrap: wrap;
 }
-
+.container-my_light{
+    margin: 40px;
+    margin-left: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    color:white;
+}
 #myheading{
     width: 100%;
     align-content: center;

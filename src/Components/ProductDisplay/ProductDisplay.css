@@ -24,9 +24,11 @@
     flex-direction: column;
 }
 .productdisplay-right h1{
-    color: #3d3d3d;
     font-size: 40px;
     font-weight: 700;
+}
+.ph1_light{
+    color: white;
 }
 .productdisplay-right-stars{
     display: flex;
@@ -54,9 +56,11 @@
 
 .productdisplay-right-size h1{
     margin-top: 55px;
-    color: #656565;
     font-size: 20px;
     font-weight: 600;
+}
+.ph1_light{
+    color:white;
 }
 .productdisplay-right-sizes{
     display: flex;
@@ -123,4 +127,7 @@
 /* Optional: You can style the input when there is an error */
 .productdisplay-right-quantity input:invalid {
     border-color: #dc3545;
+}
+.pdiv_light{
+    color: white;
 }
