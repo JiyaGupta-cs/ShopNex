@@ -19,7 +19,7 @@ const ProductDisplay = (props) => {
   const handleQuantityChange = (quantity) => {
     setSelectedQuantity(quantity);
   };
-
+ const {theme}=useContext(ShopContext);
   return (
     <div className="productdisplay">
       <div className="productdisplay-left">
@@ -34,14 +34,14 @@ const ProductDisplay = (props) => {
         </div>
       </div>
       <div className="productdisplay-right">
-        <h1>{product.name}</h1>
+        <h1 className={`ph1_${theme}`}>{product.name}</h1>
         <div className="productdisplay-right-stars">
           <img src={start_icon} alt="" />
           <img src={start_icon} alt="" />
           <img src={start_icon} alt="" />
           <img src={start_icon} alt="" />
           <img src={start_dull_icon} alt="" />
-          <p>(122)</p>
+          <p className={`ph1_${theme}`}>(122)</p>
         </div>
         <div className="productdisplay-right-prices">
           <div className="productdisplay-right-price-old">
@@ -51,14 +51,14 @@ const ProductDisplay = (props) => {
             ${product.new_price}
           </div>
         </div>
-        <div className="productdisplay-right-description">
+        <div className={`productdisplay-right-description pdiv_${theme}`}>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
           aspernatur assumenda cum eligendi tenetur, enim, expedita beatae,
           quasi et esse ipsam. Unde error quae animi distinctio numquam, a
           quidem dicta!
         </div>
         <div className="productdisplay-right-size">
-          <h1>Select Size</h1>
+          <h1 className={`ph1_${theme}`}>Select Size</h1>
           <div className="productdisplay-right-sizes">
             <div
               className={`size-option ${
@@ -103,7 +103,7 @@ const ProductDisplay = (props) => {
           </div>
         </div>
         <div className="productdisplay-right-quantity">
-          <h1>Select Quantity</h1>
+          <h1 className={`ph1_${theme}`}>Select Quantity</h1>
           <input
             type="number"
             min="1"
@@ -118,10 +118,10 @@ const ProductDisplay = (props) => {
         >
           ADD TO CART
         </button>
-        <p className="productdisplay-right-category">
+        <p className={"productdisplay-right-category pdiv_"+theme}>
           <span>Category : </span>Women, T-shirt, Crop Top
         </p>
-        <p className="productdisplay-right-category">
+        <p className={"productdisplay-right-category pdiv_"+theme}>
           <span>Tags : </span>Modern, Latest
         </p>
       </div>
