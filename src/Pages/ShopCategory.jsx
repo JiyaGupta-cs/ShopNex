@@ -1,85 +1,58 @@
-import React, { useContext, useEffect, useState } from "react";
-import "./CSS/ShopCategory.css";
-import { ShopContext } from "../Context/ShopContext";
-import dropdown_icon from "../Components/Assets/dropdown_icon.png";
-import Item from "../Components/Item/Item";
+import React, { useContext, useState } from 'react';
+import './CSS/ShopCategory.css';
+import { ShopContext } from '../Context/ShopContext';
+import dropdown_icon from '../Components/Assets/dropdown_icon.png';
+import Item from '../Components/Item/Item';
 
 const ShopCategory = (props) => {
   const { all_product } = useContext(ShopContext);
-  const [sorting, setSorting] = useState("");
-  const [filteredProducts, setFilteredProducts] = useState([]);
   const productsPerPage = 12;
   const [page, setPage] = useState(1);
 
-  useEffect(() => {
-    setSorting("");
-  }, [props.category]);
+  let filteredProducts;
 
-  useEffect(() => {
-    const productsCopy = [...all_product];
-    if (sorting === "0") {
-      productsCopy.sort((a, b) => a.new_price - b.new_price);
-    } else if (sorting === "1") {
-      productsCopy.sort((a, b) => b.new_price - a.new_price);
-    }
-    setFilteredProducts(productsCopy);
-  }, [sorting, all_product]);
-
-
-  const startIndex = (page - 1) * productsPerPage;
-  const endIndex = startIndex + productsPerPage;
-  const totalProducts = filteredProducts.length;
+  if (props.category === 'kids') {
+    filteredProducts = all_product.filter(item => item.category === 'kids');
+  } else {
+    filteredProducts = all_product.filter(item => item.category === props.category);
+  }
+  const totalProducts = props.category === 'kids' ? filteredProducts.length : 76;
+  while (filteredProducts.length < totalProducts) {
+    filteredProducts.push(...filteredProducts);
+  }
 
   const handleExploreMore = () => {
     setPage((prevPage) => prevPage + 1);
   };
 
-  const {theme}=useContext(ShopContext);
+  const startIndex = (page - 1) * productsPerPage;
+  let endIndex = startIndex + productsPerPage;
+
+  endIndex = Math.min(endIndex, totalProducts);
 
   return (
-    <div className="shop-category">
-      <img className="shopcategory-banner" src={props.banner} alt="" />
-      <div className="shopcategory-indexSort">
+    <div className='shop-category'>
+      <img className='shopcategory-banner' src={props.banner} alt='' />
+      <div className='shopcategory-indexSort'>
         <p>
-          <span>{`Showing ${startIndex + 1}-${Math.min(endIndex, totalProducts)}`}</span> out of {totalProducts} products
-
-        <p className={`psc_${theme}`}>
-          <span>Showing 1-12</span> out of 36 products
-
+          <span>{`Showing ${startIndex + 1}-${endIndex}`}</span> out of {totalProducts} products
         </p>
-        <select
-          name="shopcategory-sort"
-          value={sorting}
-          onChange={(e) => setSorting(e.target.value)}
-          className={`shopcategory-sort_${theme}`}
-        >
-          <option value="" disabled selected hidden>
-           Sort By
-          </option>
-          <option value="0">Low to High</option>
-          <option value="1">High to Low</option>
-        </select>
+        <div className='shopcategory-sort'>
+          Sort By <img src={dropdown_icon} alt='' />
+        </div>
       </div>
-      <div className="shopcategory-products">
+      <div className='shopcategory-products'>
         {filteredProducts.slice(startIndex, endIndex).map((item, i) => (
-          <Item
-            key={i}
-            id={item.id}
-            name={item.name}
-            image={item.image}
-            new_price={item.new_price}
-            old_price={item.old_price}
-          />
+          <Item key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price} />
         ))}
       </div>
       {endIndex < totalProducts && (
-        <div className="shopcategory-loadmore" onClick={handleExploreMore}>
+        <div className='shopcategory-loadmore' onClick={handleExploreMore}>
           Explore More
         </div>
       )}
     </div>
   );
 };
-
 
 export default ShopCategory;
