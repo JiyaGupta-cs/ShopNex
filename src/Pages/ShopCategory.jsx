@@ -5,9 +5,10 @@ import dropdown_icon from '../Components/Assets/dropdown_icon.png';
 import Item from '../Components/Item/Item';
 
 const ShopCategory = (props) => {
-  const { all_product } = useContext(ShopContext);
+  const { all_product, theme } = useContext(ShopContext);
   const productsPerPage = 12;
   const [page, setPage] = useState(1);
+  const [sorting, setSorting] = useState('');
 
   let filteredProducts;
 
@@ -15,14 +16,21 @@ const ShopCategory = (props) => {
     filteredProducts = all_product.filter(item => item.category === 'kids');
   } else {
     filteredProducts = all_product.filter(item => item.category === props.category);
-  }
-  const totalProducts = props.category === 'kids' ? filteredProducts.length : 76;
-  while (filteredProducts.length < totalProducts) {
-    filteredProducts.push(...filteredProducts);
+    while (filteredProducts.length < 76) {
+      filteredProducts = [...filteredProducts, ...filteredProducts];
+    }
   }
 
+  if (sorting === '0') {
+    filteredProducts.sort((a, b) => a.new_price - b.new_price);
+  } else if (sorting === '1') {
+    filteredProducts.sort((a, b) => b.new_price - a.new_price);
+  }
+
+  const totalProducts = 76;
+
   const handleExploreMore = () => {
-    setPage((prevPage) => prevPage + 1);
+    setPage(prevPage => prevPage + 1);
   };
 
   const startIndex = (page - 1) * productsPerPage;
@@ -37,8 +45,17 @@ const ShopCategory = (props) => {
         <p>
           <span>{`Showing ${startIndex + 1}-${endIndex}`}</span> out of {totalProducts} products
         </p>
-        <div className='shopcategory-sort'>
-          Sort By <img src={dropdown_icon} alt='' />
+        <div className={`shopcategory-sort_${theme}`}>
+          Sort By
+          <select
+            name="shopcategory-sort"
+            value={sorting}
+            onChange={(e) => setSorting(e.target.value)}
+          >
+            <option value="0">Low to High</option>
+            <option value="1">High to Low</option>
+          </select>
+          {/* <img src={dropdown_icon} alt='' /> */}
         </div>
       </div>
       <div className='shopcategory-products'>
