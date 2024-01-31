@@ -1,73 +1,72 @@
 .hero_dark {
-    height: 100vh;
-    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
-    display: flex;
+  height: 100vh;
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+  display: flex;
 }
-.hero_light{
-    height: 100vh;
-    background: linear-gradient(180deg, #fde1ff,  #282c34 60%);
-    display: flex;
+.hero_light {
+  height: 100vh;
+  background: linear-gradient(180deg, #fde1ff, #282c34 60%);
+  display: flex;
 }
 .hero-left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    padding-left: 180px;
-    line-height: 1.1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 180px;
+  line-height: 1.1;
 }
 
-.hero-left .h2h_dark{
-    color: #090909;
-    font-size: 26px;
-    font-weight: 600;
+.hero-left .h2h_dark {
+  color: #090909;
+  font-size: 26px;
+  font-weight: 600;
 }
-.h2h_light{
-    color: white;
-    font-size: 26px;
-    font-weight: 600;
+.h2h_light {
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
 }
 .hero-left .ph_dark {
-    color: #171717;
-    font-size: 80px;
-    font-weight: 700;
+  color: #171717;
+  font-size: 80px;
+  font-weight: 700;
 }
-.ph_light{
-    color: white;
-    font-size: 80px;
-    font-weight: 700;
+.ph_light {
+  color: white;
+  font-size: 80px;
+  font-weight: 700;
 }
 .hero-hand-icon {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .hero-hand-icon img {
-    width: 105px;
+  width: 105px;
 }
 
 .hero-latest-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:15px;
-    width: 310px;
-    height: 70px;
-    border-radius: 75px;
-    margin-top: 30px;
-    background: #ff4141;
-    color: white;
-    font-size: 22px;
-    font-weight: 500;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 310px;
+  height: 70px;
+  border-radius: 75px;
+  margin-top: 30px;
+  background: #ff4141;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
 }
-.hero-right{
-    flex:1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.hero-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .hero-right img {
   margin-top: 150px;
