@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+.light_app{
+  background-color: #282c34;
+}
+.dark_app{
+  background: white;
+}

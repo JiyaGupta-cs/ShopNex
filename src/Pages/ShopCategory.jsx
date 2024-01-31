@@ -25,6 +25,7 @@ const ShopCategory = (props) => {
     setFilteredProducts(productsCopy);
   }, [sorting, all_product]);
 
+
   const startIndex = (page - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
   const totalProducts = filteredProducts.length;
@@ -33,21 +34,27 @@ const ShopCategory = (props) => {
     setPage((prevPage) => prevPage + 1);
   };
 
+  const {theme}=useContext(ShopContext);
+
   return (
     <div className="shop-category">
       <img className="shopcategory-banner" src={props.banner} alt="" />
       <div className="shopcategory-indexSort">
         <p>
           <span>{`Showing ${startIndex + 1}-${Math.min(endIndex, totalProducts)}`}</span> out of {totalProducts} products
+
+        <p className={`psc_${theme}`}>
+          <span>Showing 1-12</span> out of 36 products
+
         </p>
         <select
           name="shopcategory-sort"
           value={sorting}
           onChange={(e) => setSorting(e.target.value)}
-          className="shopcategory-sort"
+          className={`shopcategory-sort_${theme}`}
         >
           <option value="" disabled selected hidden>
-            Sort By
+           Sort By
           </option>
           <option value="0">Low to High</option>
           <option value="1">High to Low</option>

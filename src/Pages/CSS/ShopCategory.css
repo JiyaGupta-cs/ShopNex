@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-.shopcategory-sort {
+.shopcategory-sort_dark {
   font-family: inherit;
   text-align: center;
   padding: 10px 35px 10px 20px;
@@ -23,6 +23,20 @@
     center;
   background-position: calc(100% - 15px) center;
   font-size: 16px;
+}
+.shopcategory-sort_light {
+  font-family: inherit;
+  text-align: center;
+  padding: 10px 35px 10px 20px;
+  border-radius: 40px;
+  border: 1px solid #ffffff;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url("../../Components/Assets/dropdown_icon.png") no-repeat right
+    center;
+  background-position: calc(100% - 15px) center;
+  font-size: 16px;
+  background: rgb(255, 255, 255);
 }
 
 .shopcategory-sort option {
@@ -52,4 +66,10 @@
   color: #787878;
   font-size: 18px;
   font-weight: 500;
+}
+.psc_light{
+  color:white;
+}
+.op_light{
+  color: white;
 }
