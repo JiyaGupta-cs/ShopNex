@@ -37,6 +37,8 @@
 }
 
 .footer-social-icon :hover {
+    height: 30px;
+    width: 33px;
     border: none;
     display: flex;
     gap: 20px;
