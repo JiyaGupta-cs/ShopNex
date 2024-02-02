@@ -14,7 +14,7 @@
     align-items: center;
     text-decoration: none;
   }  
-.nav-logo p{
+.nav-logo{
     color: #171717;
     font-size: 38px;
     font-weight: 600;
@@ -49,7 +49,7 @@
     align-items: center;
     gap:45px;
 }
-.nav-login-cart button{
+.nav-login-cart .log_btn{
     width: 157px;
     height: 58px;
     outline: none;
@@ -61,7 +61,7 @@
     background: white;
     cursor: pointer;
 }
-.nav-login-cart button:active{
+.nav-login-cart  .log_btn:active{
     background: #f3f3f3;
 }
 .nav-cart-count{
@@ -77,9 +77,45 @@
     background: red;
     color: white;
 }
-/* .hamburger{
-    display: none;
-} */
+
+.dark_btn{
+    width: 50px;
+    height: 50px;
+}
+.dark{
+    background: linear-gradient(180deg, black, #e1ffea22 90%);
+}
+.pnav_dark{
+    color: #171717;
+    font-size: 38px;
+    font-weight: 600;
+}
+.pnav_light{
+    color: white;
+    font-size: 38px;
+    font-weight: 600;
+}
+.cart{
+    width: 42px;
+    height: 42px;
+}
+button{
+    border: none;
+}
+.toggle_light{
+  background-color:orange;
+  color: white;
+}
+.toggle_dark{
+    background-color: #515151;
+    color: white;
+}
+.change{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
 @media screen and (max-width: 900px){
     .navbar{
         width: 100%;
@@ -119,4 +155,3 @@
         margin-right: 58px;
     }
 }
-

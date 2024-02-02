@@ -5,17 +5,32 @@
     gap: 30px;
     margin-bottom: 100px;
 }
-.popular h1 {
+.popular .h1p_dark {
     color: #171717;
     font-size: 30px;
     font-weight: 600;
 }
-.popular hr{
+
+.h1p_light{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.popular .hrp_dark{
     width: 200px;
     height: 6px;
     border-radius: 10px;
     background: #252525;
 }
+
+.hrp_light{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: white;
+}
+
 .popular-item{
     margin-top: 50px;
     display: flex;

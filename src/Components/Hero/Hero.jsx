@@ -8,7 +8,7 @@ import { ShopContext } from '../../Context/ShopContext'
 const Hero = () => {
     const {theme}=useContext(ShopContext)
     return (
-        <div className='hero' {'hero_'+theme} >
+        <div className={'hero_'+theme} >
             <div className="hero-left common-container">
                 <h2 className={'h2h_'+theme}>NEW ARRIVALS ONLY</h2>
                 <div>

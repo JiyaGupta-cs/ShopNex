@@ -1,26 +1,44 @@
-import React, { useContext, useState } from "react";
-import "./Navbar.css";
+import React, { useContext, useState } from 'react'
+import './Navbar.css'
+import logo from '../Assets/logo.png'
+import cart_icon from '../Assets/cart_icon.png'
+import cart_icon_dark from '../Assets/cart_icon_dark.png'
+import { Link } from 'react-router-dom'
+import { ShopContext } from '../../Context/ShopContext'
 import Hamburger from "./Hamburger";
-import logo from "../Assets/logo.png";
-import cart_icon from "../Assets/cart_icon.png";
-import { Link } from "react-router-dom";
-import { ShopContext } from "../../Context/ShopContext";
-
 const Navbar = () => {
-  const [menu, setMenu] = useState("shop");
-  const { getTotalCartItems } = useContext(ShopContext);
-  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+    const [icon,setIcon]=useState(cart_icon);
+    const [menu,setMenu]=useState("shop");
+    const {getTotalCartItems,theme,setTheme}=useContext(ShopContext);
+    const [hamburgerOpen, setHamburgerOpen] = useState(false);
+   const toggle=()=>
+    {
+      if(theme==="dark")
+      {
+        setTheme("light");
+        setIcon(cart_icon_dark);
+        const dnav=document.getElementById("nav");
+        dnav.classList.add("dark");
+      }
+      else
+      {
+        setTheme("dark");
+        setIcon(cart_icon);
+        const dnav=document.getElementById("nav");
+        dnav.classList.remove("dark");
+      }
+    }
 
   const toggleHamburger = () =>{
     setHamburgerOpen(!hamburgerOpen)
   }
-
+  
   return (
-    <div className="navbar">
+    <div className='navbar' id='nav'>          
       <div className="nav-logo">
         <Link className="nav-logo-link" to="/">
           <img src={logo} alt="ShopNex Logo" style={{ marginRight: '10px' }} />
-          <p>ShopNex</p>
+          <p className={"pnav_"+theme}>ShopNex</p>
         </Link>
       </div>
       <ul className="nav-menu">
@@ -58,13 +76,10 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="nav-login-cart">
-        <Link to="/login">
-          <button>Login</button>
-        </Link>
-        <Link to="/cart">
-          <img className="cart-img" src={cart_icon} alt="" />
-        </Link>
+        <Link to='/login'><button className='log_btn'>Login</button></Link>
+        <Link to='/cart'><img src={icon} alt="" className='cart'/></Link>
         <div className="nav-cart-count">{getTotalCartItems()}</div>
+        <div className='dark_btn'><button onClick={toggle} className={`toggle_${theme} change`}>{theme}</button></div>
       </div>
       <div className="hamburger" onClick={toggleHamburger}>
         <Hamburger isOpen={hamburgerOpen}/>
@@ -148,5 +163,4 @@ const Navbar = () => {
     </div>
   );
 };
-
-export default Navbar;
+export default Navbar

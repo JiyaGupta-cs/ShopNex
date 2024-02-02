@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './CSS/About.css'
-
+import { useState,useEffect } from 'react';
+import { ShopContext } from '../Context/ShopContext';
 const About = () => {
+  const {theme}=useContext(ShopContext);
   return (
-    <>
+    <div className={'about_page_'+theme}>
     <div className="container-my">
       <h1 id = "aboutheading">About Us</h1>
       <div className="content">
@@ -40,7 +42,7 @@ const About = () => {
       </div>
     </div>
     </div>
-    </>
+    </div>
   );
 };
 

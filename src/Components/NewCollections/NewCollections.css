@@ -5,16 +5,29 @@
     gap: 20px;
     margin-bottom: 100px;
 }
-.new-collections h1 {
+.new-collections .h1_dark {
     color: #171717;
     font-size: 30px;
     font-weight: 600;
 }
+
+.h1_light{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
 .new-collections hr{
     width: 200px;
     height: 6px;
     border-radius: 10px;
+}
+
+.hr_dark{
     background: #252525;
+}
+.hr_light{
+    background: white;
 }
 .new-collections-item{
     margin-top: 50px;
