@@ -19,14 +19,15 @@
     font-size: 38px;
     font-weight: 600;
 }
-.nav-menu{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 40px;
-    color: #626262;
-    font-size: 20px;
-    font-weight: 500;
+.nav-menu {
+    flex-direction: column;
+    gap: 0px;
+    font-size: 22px;
+    margin-top: 0px;
+    margin-right: 0px;
+    background-color: #fde1ff;
+    height: 100vh;
+    width: 100vw;
 }
 .nav-menu li{
     display: flex;
