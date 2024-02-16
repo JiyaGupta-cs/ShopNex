@@ -1,13 +1,13 @@
 .navbar{
     display: flex;
     justify-content: space-around;
-    padding: 16px;
+    /* padding: 16px; */
     box-shadow: 0 1px 3px -2px black;
 }
 .nav-logo{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 .nav-logo-link {
     display: flex;
@@ -19,14 +19,15 @@
     font-size: 38px;
     font-weight: 600;
 }
-.nav-menu{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 50px;
-    color: #626262;
-    font-size: 20px;
-    font-weight: 500;
+.nav-menu {
+    flex-direction: column;
+    gap: 0px;
+    font-size: 22px;
+    margin-top: 0px;
+    margin-right: 0px;
+    background-color: #fde1ff;
+    height: 100vh;
+    width: 100vw;
 }
 .nav-menu li{
     display: flex;
@@ -77,6 +78,7 @@
     background: red;
     color: white;
 }
+
 .dark_btn{
     width: 50px;
     height: 50px;
@@ -113,4 +115,44 @@ button{
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 900px){
+    .navbar{
+        width: 100%;
+        padding: 12px;
+    }
+    .nav-logo{
+        flex-direction: column;
+        gap: 6px;
+    }
+    .nav-logo p{
+        font-size: 16px;
+    }
+    .nav-menu{
+        flex-direction: column;
+        gap: 12px;
+        font-size: 16px;
+        margin-right: 14px;
+    }
+    .nav-login-cart{
+        gap:18px;
+    }
+    .nav-login-cart button{
+        width: 100px;
+        height: 42px;
+        font-size: 16px;
+        margin-right:0px;
+    }
+    .nav-cart-count{
+        width: 20px;
+        height: 20px;
+        margin-top: -34px;
+        margin-left: -90px;
+        font-size: 12px;
+    }
+    .cart-img{
+        width: 2.5rem;
+        margin-right: 58px;
+    }
 }

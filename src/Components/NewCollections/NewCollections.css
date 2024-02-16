@@ -36,7 +36,26 @@
 }
 .collections{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 50px;
     gap: 30px;
+}
+
+@media screen and (max-width: 600px){
+    .new-collections-item{
+        gap: 10px;
+    }
+    .collections{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1130px){
+    .new-collections-item{
+        gap: 10px;
+    }
+    .collections{
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
 }

@@ -34,5 +34,37 @@
 .popular-item{
     margin-top: 50px;
     display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px){
+    .popular h1 {
+        margin-top: 30px;
+    }
+    .popular-item{
+        flex-direction: column;
+        padding: 0px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1130px){
+.popular-item{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
+    padding: 0px;
+    margin-left: 20px;
+}
+}
+@media only screen and (min-width: 1130px) and (max-width: 1200px){
+    .popular-item{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 0px;
+    margin-left: 20px;
+    }
 }
