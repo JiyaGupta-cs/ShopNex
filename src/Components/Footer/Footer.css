@@ -70,3 +70,21 @@
     background:#c7c7c7;
 }
 
+.hr_dark{
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background:#c7c7c7;
+    color:black;
+}
+
+
+.link_light{
+    text-decoration: none;
+    color: white;
+}
+.link_dark{
+    text-decoration: none;
+    color:  #252525;
+}
