@@ -21,7 +21,7 @@
     display: grid;
     grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
-    gap: 5px;
+    gap: 75px;
     padding: 20px 0px;
    
     font-size: 18px;
@@ -86,13 +86,13 @@ button{
 .cartitems-promocode{
     flex: 1;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 500;   
 }
 .cartitems-promocode p{
     color: #555;
 }
 .cartitems-promobox{
-    width: 404px;
+    width: 504px;
     margin-top: 15px;
     padding-left: 20px;
     height: 58px;
@@ -103,57 +103,14 @@ button{
     outline: none;
     background: transparent;
     font-size: 16px;
-    width: 270px;
+    width: 330px;
     height: 50px;
 }
 .cartitems-promobox button{
-    width: 130px;
+    width: 170px;
     height: 58px;
     font-size: 16px;
     background: black;
     color: white;
     cursor: pointer;
-}
-
-@media screen and (max-width: 900px){
-    .cartitems {
-        margin: 40px 50px;
-    }
-    .cartitems-format-main {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 25px;
-        font-size: 18px;
-    }
-    .cartitems-down{
-        flex-direction: column;
-    }
-    .cartitems-total{
-        width: 80%;
-        margin-left: 40px;
-        gap: 30px;
-    }
-    .cartitems-total-item{
-        padding: 18px 0px;
-    }
-    .cartitems-total button{
-        width: 220px;
-        height: 48px;
-    }
-    .cartitems-promocode{
-        width: 100%;
-        margin-top: 60px;
-    }
-    .cartitems-promobox{
-        width: 76%;
-        height: 48px;
-        display: flex;
-    }
-    .cartitems-promobox input{
-        width: 60%;
-    }
-    .cartitems-promobox button{
-        width: 39%;
-        height: 48px;
-    }
 }
