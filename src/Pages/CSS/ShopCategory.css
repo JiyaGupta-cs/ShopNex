@@ -1,43 +1,75 @@
 .shopcategory-banner {
-    display: block;
-    margin: 30px auto;
-    width: 82%;
+  display: block;
+  margin: 30px auto;
+  width: 82%;
 }
 
 .shopcategory-indexSort {
-    display: flex;
-    margin: 0px 170px;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  margin: 0px 170px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.shopcategory-sort {
-    padding: 10px 20px;
-    border-radius: 40px;
-    border: 1px solid #888;
+.shopcategory-sort_dark {
+  font-family: inherit;
+  text-align: center;
+  padding: 10px 35px 10px 20px;
+  border-radius: 40px;
+  border: 1px solid #888;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url("../../Components/Assets/dropdown_icon.png") no-repeat right
+    center;
+  background-position: calc(100% - 15px) center;
+  font-size: 16px;
+}
+.shopcategory-sort_light {
+  font-family: inherit;
+  text-align: center;
+  padding: 10px 35px 10px 20px;
+  border-radius: 40px;
+  border: 1px solid #ffffff;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url("../../Components/Assets/dropdown_icon.png") no-repeat right
+    center;
+  background-position: calc(100% - 15px) center;
+  font-size: 16px;
+  background: rgb(255, 255, 255);
+}
+
+.shopcategory-sort option {
+  text-align: left;
 }
 
 .shopcategory-indexSort p span {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .shopcategory-products {
-    margin: 20px 70px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 80px;
+  margin: 20px 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 80px;
 }
 
-.shopcategory-loadmore{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 150px auto;
-    width: 233px;
-    height: 69px;
-    border-radius: 75px;
-    background: #ededed;
-    color: #787878;
-    font-size: 18px;
-    font-weight: 500;
+.shopcategory-loadmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px auto;
+  width: 233px;
+  height: 69px;
+  border-radius: 75px;
+  background: #ededed;
+  color: #787878;
+  font-size: 18px;
+  font-weight: 500;
+}
+.psc_light{
+  color:white;
+}
+.op_light{
+  color: white;
 }

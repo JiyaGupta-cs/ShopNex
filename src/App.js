@@ -11,10 +11,14 @@ import Footer from './Components/Footer/Footer';
 import men_banner from './Components/Assets/banner_mens.png'
 import women_banner from './Components/Assets/banner_women.png'
 import kids_banner from './Components/Assets/banner_kids.png'
-
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+import { useContext,useEffect } from 'react';
+import { ShopContext } from './Context/ShopContext';
 function App() {
+  const {theme}=useContext(ShopContext);
   return (
-    <div>
+    <div className={`${theme}_app`}>
       <BrowserRouter>
       <Navbar/>
       <Routes>
@@ -27,10 +31,11 @@ function App() {
         </Route>
         <Route path='/cart' element={<Cart/>} />
         <Route path='/login' element={<LoginSignup/>} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/contact' element={<Contact/>} />
       </Routes>
       <Footer/>
       </BrowserRouter>
-      
     </div>
   );
 }

@@ -1,0 +1,30 @@
+.container-my{
+    margin: 40px;
+    margin-left: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#aboutheading{
+    width: 100%;
+    font-size: 5vw;
+    align-content: center;
+    margin-bottom: 30px;
+}
+.content{
+    margin-top: 0;
+    flex-shrink: 1;
+    max-width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.txt{
+    font-size: large;
+}
+.container-2{
+    margin: 5px 40px 5px 40px;
+
+}
+.about_page_light{
+    color:white;
+}

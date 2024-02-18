@@ -14,9 +14,8 @@
     height: 70px;
     border: 1px solid #d0d0d0;
 }
-.descriptionbox-nav-box.fade{
+.descriptionbox-nav-box .fade{
 background: #FBFBFB;
-color: #555;
 }
 .descriptionbox-description{
     display: flex;
@@ -25,4 +24,10 @@ color: #555;
     border: 1px solid #d0d0d0;
     padding: 48px;
     padding-bottom: 70px;
+}
+.dbp_light{
+    color: white;
+}
+.bpb_dark{
+    color:#555
 }

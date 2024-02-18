@@ -5,16 +5,30 @@
     gap: 10px;
     height: 90vh;
 }
-.relatedproducts h1{
+.relatedproducts .h1_dark{
     color: #171717;
     font-size: 50px;
     font-weight: 600;
 }
-.relatedproducts hr{
+
+.h1_light{
+ color:white;
+ font-size: 50px;
+ font-weight: 600;
+}
+
+.relatedproducts .hr_dark{
     width: 200px;
     height: 6px;
     border-radius: 10px;
     background: #252525;
+}
+
+hr_light{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: white;
 }
 .relatedproducts-item{
     margin-top: 50px;

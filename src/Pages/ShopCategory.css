@@ -1,0 +1,17 @@
+
+.shop-category {
+  padding-bottom: 20px;
+}
+
+.shopcategory-loadmore {
+  /* Styles for the Explore More button */
+  background-color: #ff5733 !important; 
+  color: #fff; /* Text color */
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shopcategory-loadmore:hover {
+  background-color: #e64a2e !important; /* Change color on hover */
+}

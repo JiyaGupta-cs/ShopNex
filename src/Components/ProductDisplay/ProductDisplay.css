@@ -24,9 +24,11 @@
     flex-direction: column;
 }
 .productdisplay-right h1{
-    color: #3d3d3d;
     font-size: 40px;
     font-weight: 700;
+}
+.ph1_light{
+    color: white;
 }
 .productdisplay-right-stars{
     display: flex;
@@ -50,11 +52,15 @@
 .productdisplay-right-price-new{
     color: #ff4141;
 }
+
+
 .productdisplay-right-size h1{
     margin-top: 55px;
-    color: #656565;
     font-size: 20px;
     font-weight: 600;
+}
+.ph1_light{
+    color:white;
 }
 .productdisplay-right-sizes{
     display: flex;
@@ -68,6 +74,14 @@
     border-radius: 3px;
     cursor: pointer;
 }
+
+.productdisplay-right-sizes div.selected {
+    border: 1px solid #007bff;
+    border-radius: 3px;
+    background: #007bff;
+    color: #fff;
+}
+
 .productdisplay-right button{
     padding: 20px 40px;
     width: 200px;
@@ -80,9 +94,40 @@
     outline: none;
     cursor: pointer;
 }
-.productdisplay-right-category{
-    margin-top: 10px;
+
+
+.productdisplay-right-quantity {
+    display: flex;
+    margin: 20px;
+    align-items: center;
 }
-.productdisplay-right-category span{
-    font-weight: 600;
+
+.productdisplay-right-quantity h1 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin: 0 10px;
+}
+
+.productdisplay-right-quantity input {
+    width: 35px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* Optional: You can style the input when focused */
+.productdisplay-right-quantity input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Optional: You can style the input when there is an error */
+.productdisplay-right-quantity input:invalid {
+    border-color: #dc3545;
+}
+.pdiv_light{
+    color: white;
 }
