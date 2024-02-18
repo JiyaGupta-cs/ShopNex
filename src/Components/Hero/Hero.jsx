@@ -8,9 +8,9 @@ import { ShopContext } from '../../Context/ShopContext'
 const Hero = () => {
     const {theme}=useContext(ShopContext)
     return (
-        <div className="hero {'hero_'+theme}" >
-            <div className="hero-left common-container">
-                <h2 className={'h2h_'+theme}>NEW ARRIVALS ONLY</h2>
+        <div className={'hero_'+theme}>
+            <div className="hero-left">
+                <h2  className={'h2h_'+theme}>NEW ARRIVALS ONLY</h2>
                 <div>
                     <div className="hero-hand-icon">
                         <p className={'ph_'+theme}>New</p>
@@ -24,7 +24,7 @@ const Hero = () => {
                     <img src={arrow_icon} alt="" />
                 </div>
             </div>
-            <div className="hero-right common-container">
+            <div className="hero-right">
                 <img src={hero_image} alt="" />
             </div>
         </div>
