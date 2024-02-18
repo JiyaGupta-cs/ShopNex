@@ -46,6 +46,14 @@
     gap: 20px;
 }
 
+.footer-social-icon :hover {
+    height: 30px;
+    width: 33px;
+    border: none;
+    display: flex;
+    gap: 20px;
+}
+
 .footer-icons-container {
     padding: 10px;
     padding-bottom: 6px;
