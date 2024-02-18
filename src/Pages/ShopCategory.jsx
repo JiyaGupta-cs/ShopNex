@@ -1,69 +1,73 @@
-import React, { useContext, useEffect, useState } from "react";
-import "./CSS/ShopCategory.css";
-import { ShopContext } from "../Context/ShopContext";
-import dropdown_icon from "../Components/Assets/dropdown_icon.png";
-import Item from "../Components/Item/Item";
+import React, { useContext, useState } from 'react';
+import './CSS/ShopCategory.css';
+import { ShopContext } from '../Context/ShopContext';
+import dropdown_icon from '../Components/Assets/dropdown_icon.png';
+import Item from '../Components/Item/Item';
 
 const ShopCategory = (props) => {
-  // in props the category beign passed in navbar like category=men,women,kids will be passed
-  const { all_product } = useContext(ShopContext);
-  const [sorting, setSorting] = useState(null);
-  const [filteredProducts, setFilteredProducts] = useState([]);
- 
-  useEffect(() => {
-    setSorting("");
-  }, [props.category]);
+  const { all_product, theme } = useContext(ShopContext);
+  const productsPerPage = 12;
+  const [page, setPage] = useState(1);
+  const [sorting, setSorting] = useState('');
 
-  useEffect(() => {
-    // Creating a temporary array to avoid changing original data
-    const productsCopy = [...all_product];
-    if (sorting === "0") {
-      productsCopy.sort((a, b) => a.new_price - b.new_price);
-    } else if (sorting === "1") {
-      productsCopy.sort((a, b) => b.new_price - a.new_price);
+  let filteredProducts;
+
+  if (props.category === 'kids') {
+    filteredProducts = all_product.filter(item => item.category === 'kids');
+  } else {
+    filteredProducts = all_product.filter(item => item.category === props.category);
+    while (filteredProducts.length < 76) {
+      filteredProducts = [...filteredProducts, ...filteredProducts];
     }
-    setFilteredProducts(productsCopy);
-  }, [sorting, all_product]);
-  const {theme}=useContext(ShopContext);
+  }
+
+  if (sorting === '0') {
+    filteredProducts.sort((a, b) => a.new_price - b.new_price);
+  } else if (sorting === '1') {
+    filteredProducts.sort((a, b) => b.new_price - a.new_price);
+  }
+
+  const totalProducts = 76;
+
+  const handleExploreMore = () => {
+    setPage(prevPage => prevPage + 1);
+  };
+
+  const startIndex = (page - 1) * productsPerPage;
+  let endIndex = startIndex + productsPerPage;
+
+  endIndex = Math.min(endIndex, totalProducts);
+
   return (
-    <div className="shop-category">
-      <img className="shopcategory-banner" src={props.banner} alt="" />
-      <div className="shopcategory-indexSort">
-        <p className={`psc_${theme}`}>
-          <span>Showing 1-12</span> out of 36 products
+    <div className='shop-category'>
+      <img className='shopcategory-banner' src={props.banner} alt='' />
+      <div className='shopcategory-indexSort'>
+        <p>
+          <span>{`Showing ${startIndex + 1}-${endIndex}`}</span> out of {totalProducts} products
         </p>
-        <select
-          name="shopcategory-sort"
-          value={sorting}
-          onChange={(e) => setSorting(e.target.value)}
-          className={`shopcategory-sort_${theme}`}
-        >
-          <option value="" disabled selected hidden>
-           Sort By
-          </option>
-          <option value="0">Low to High</option>
-          <option value="1">High to Low</option>
-        </select>
+        <div className={`shopcategory-sort_${theme}`}>
+          Sort By
+          <select
+            name="shopcategory-sort"
+            value={sorting}
+            onChange={(e) => setSorting(e.target.value)}
+          >
+            <option value="0">Low to High</option>
+            <option value="1">High to Low</option>
+          </select>
+          {/* <img src={dropdown_icon} alt='' /> */}
+        </div>
       </div>
-      <div className="shopcategory-products">
-        {filteredProducts.map((item, i) => {
-          if (props.category === item.category) {
-            return (
-              <Item
-                key={i}
-                id={item.id}
-                name={item.name}
-                image={item.image}
-                new_price={item.new_price}
-                old_price={item.old_price}
-              />
-            );
-          } else {
-            return null;
-          }
-        })}
+      <div className='shopcategory-products'>
+        {filteredProducts.slice(startIndex, endIndex).map((item, i) => (
+          <Item key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price} />
+        ))}
       </div>
-      <div className="shopcategory-loadmore">Explore More</div>
+      {endIndex < totalProducts && (
+        <div className='shopcategory-loadmore' onClick={handleExploreMore}>
+          Explore More
+        </div>
+      )}
     </div>
   );
 };
