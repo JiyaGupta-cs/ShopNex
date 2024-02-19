@@ -7,9 +7,9 @@
   pointer-events: none;
 }
 .topbtn{
-  position: absolute;
-  right: 0;
-  margin-top: -5rem;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
   padding: 1rem;
   border: none;
   border-radius: 100%;
