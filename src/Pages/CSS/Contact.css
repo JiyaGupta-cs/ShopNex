@@ -1,14 +1,20 @@
 /* contact section starts */
+#contact-heading {
+  text-align: center;}
 
-h2{
-  text-align: center;
- 
-}
-span{
+#contact-heading .heading-span {
   color: #2506ad;
   font-size: larger;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+  
+
+
+.contact {
+  padding-top: 10%; /* Adjust as needed */
+}
+
+  
 .contact .container {
   max-width: 1200px;
   width: 80%;

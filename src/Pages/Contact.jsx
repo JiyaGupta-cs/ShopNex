@@ -16,8 +16,8 @@ const Contact = () => {
         />
       </Helmet>
       <section className="contact" id="contact">
-        <h2 className="heading">
-          <i className="fas fa-headset"></i> Get in <span>Touch</span>
+      <h2 id="contact-heading" className="heading">
+      <i className="fas fa-headset"></i> Contact  <span className="heading-span"> Us</span>
         </h2>
 
         <div className="container">
