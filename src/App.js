@@ -17,6 +17,7 @@ import { useContext,useEffect } from 'react';
 import { ShopContext } from './Context/ShopContext';
 function App() {
   const {theme}=useContext(ShopContext);
+  const top =() => {window.scrollTo(0,0)}
   return (
     <div className={`${theme}_app`}>
       <BrowserRouter>
@@ -36,6 +37,7 @@ function App() {
       </Routes>
       <Footer/>
       </BrowserRouter>
+      <button onClick={top} className='topbtn'> ^ </button>
     </div>
   );
 }
