@@ -59,7 +59,7 @@ const Navbar = () => {
                 <div className="nav-cart-count">{getTotalCartItems()}</div>
                 <div className='dark_btn'>
                     <button onClick={toggle} className={`toggle_${theme} change`}>
-                        {theme === 'light' ? <img src={moonIcon} alt="Moon" /> : <img src={sunIcon} alt="Sun" />}
+                        {theme === 'light' ? <img src={sunIcon}  /> : <img src={moonIcon}  />}
                     </button>
                 </div>
             </div>
