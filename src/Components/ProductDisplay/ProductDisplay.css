@@ -109,12 +109,12 @@
 }
 
 .productdisplay-right-quantity input {
-    width: 35px;
-    padding: 8px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 10px;
+    width: 48px;
+    padding: 6px;
+    font-size: 15px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    margin-right: 3px;
 }
 
 /* Optional: You can style the input when focused */
