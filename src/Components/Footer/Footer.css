@@ -47,8 +47,6 @@
 }
 
 .footer-social-icon :hover {
-    height: 30px;
-    width: 33px;
     border: none;
     display: flex;
     gap: 20px;
@@ -118,4 +116,11 @@
 .link_dark{
     text-decoration: none;
     color:  #252525;
+}
+.footer-social-icon img {
+    transition: transform 0.2s ease-in-out; 
+}
+
+.footer-social-icon img:hover {
+    transform: scale(1.1); /* Scale up on hover */
 }
