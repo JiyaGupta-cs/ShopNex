@@ -43,19 +43,19 @@
   width: 45%;
   margin-right: 3.5rem;
 }
-form .form-group {
+.contact-form .form-group {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.form-group .field {
+.contact-form .form-group .field {
   height: 50px;
   display: flex;
   position: relative;
   margin: 1rem;
   width: 100%;
 }
-form i {
+ .contact-form i {
   position: absolute;
   top: 50%;
   left: 18px;
@@ -64,8 +64,8 @@ form i {
   pointer-events: none;
   transform: translateY(-50%);
 }
-form .field input,
-form .message textarea {
+ .contact-form .field input,
+ .message textarea {
   width: 100%;
   height: 100%;
   outline: none;
@@ -80,36 +80,36 @@ form .message textarea {
 .message textarea::placeholder {
   color: rgb(51, 51, 51);
 }
-.field input:focus,
+.contact-form .field input:focus,
 .message textarea:focus {
   padding-left: 47px;
   border: 2px solid rgb(115, 3, 167);
 }
-.field input:focus ~ i,
+.contact-form .field input:focus ~ i,
 .message textarea:focus ~ i {
   color: rgb(115, 3, 167);
 }
-div .message {
+.contact-form .message {
   position: relative;
   margin: 1rem;
   width: 100%;
 }
-div .message i {
+.contact-form .message i {
   top: 25px;
   font-size: 20px;
   left: 15px;
 }
-div .message textarea {
+.contact-form .message textarea {
   min-height: 120px;
   max-height: 230px;
   max-width: 100%;
   min-width: 100%;
   padding: 12px 20px 0 48px;
 }
-div .message textarea::-webkit-scrollbar {
+.contact-form  .message textarea::-webkit-scrollbar {
   width: 0px;
 }
-div .button-area {
+.contact-form  .button-area {
   display: flex;
   float: right;
   flex-direction: row-reverse;
@@ -122,7 +122,7 @@ div .button-area {
   cursor: pointer;
   border-radius: 5px;
   padding: 7px 15px;
-  background: #25067c;
+  background: #f83d0f;
   box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
   transition: 0.3s ease;
   font-family: "Nunito", sans-serif;

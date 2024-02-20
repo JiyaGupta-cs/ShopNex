@@ -25,7 +25,7 @@ const Contact = () => {
             <div className="image-box">
               <img draggable="false" src={p1} alt="" />
             </div>
-            <form id="contact-form">
+            <div className="contact-form">
               <div className="form-group">
                 <div className="field">
                 <i className="fas fa-user"></i>
@@ -50,7 +50,7 @@ const Contact = () => {
                   Submit <i className="fa fa-paper-plane"></i>
                 </button>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </section>
