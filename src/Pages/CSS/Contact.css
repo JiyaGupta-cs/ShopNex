@@ -3,7 +3,7 @@
   text-align: center;}
 
 #contact-heading .heading-span {
-  color: #2506ad;
+  color:blue;
   font-size: larger;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -89,27 +89,27 @@ form .message textarea {
 .message textarea:focus ~ i {
   color: rgb(115, 3, 167);
 }
-form .message {
+div .message {
   position: relative;
   margin: 1rem;
   width: 100%;
 }
-form .message i {
+div .message i {
   top: 25px;
   font-size: 20px;
   left: 15px;
 }
-form .message textarea {
-  min-height: 130px;
+div .message textarea {
+  min-height: 120px;
   max-height: 230px;
   max-width: 100%;
   min-width: 100%;
   padding: 12px 20px 0 48px;
 }
-form .message textarea::-webkit-scrollbar {
+div .message textarea::-webkit-scrollbar {
   width: 0px;
 }
-form .button-area {
+div .button-area {
   display: flex;
   float: right;
   flex-direction: row-reverse;
@@ -122,7 +122,7 @@ form .button-area {
   cursor: pointer;
   border-radius: 5px;
   padding: 7px 15px;
-  background: #2506ad;
+  background: #25067c;
   box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
   transition: 0.3s ease;
   font-family: "Nunito", sans-serif;
