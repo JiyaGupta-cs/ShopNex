@@ -1,0 +1,28 @@
+name: Welcome New Contributors
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if PR is from a new contributor
+        id: check_new_contributor
+        uses: actions/github-script@v5
+        with:
+          script: |
+            const author = context.payload.pull_request.user.login;
+            const commits = await github.paginate(github.repos.listCommits.endpoint.merge({ per_page: 100 }), res => res.data);
+            const authorCommits = commits.filter(commit => commit.author.login === author);
+            const isNewContributor = authorCommits.length === 0;
+            console.log(`Is ${author} a new contributor? ${isNewContributor}`);
+            return isNewContributor; 
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Welcome message
+        if: steps.check_new_contributor.outputs.result == 'true'
+        run: |
+          echo "Welcome, @$GITHUB_ACTOR! Thanks for your contribution 🎉"
