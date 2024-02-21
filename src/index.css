@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
 *{
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
