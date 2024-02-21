@@ -7,36 +7,20 @@ const ShopContextProvider = (props) => {
   const [cartItems, setcartItems] = useState([]);
   const [theme,setTheme]=useState("dark");
   const addToCart = (itemId, size, quantity) => {
-    const existingCartItemIndex = cartItems.findIndex(item => item.id === itemId && item.size === size);
-  
-    if (existingCartItemIndex !== -1) {
-      const updatedCartItems = cartItems.map((item, index) => {
-        if (index === existingCartItemIndex) {
-          return {
-            ...item,
-            quantity: item.quantity + quantity
-          };
-        }
-        return item;
-      });
-      setcartItems(updatedCartItems);
-    } else {
-      const cartProduct = all_product.find((product) => product.id === itemId);
-      cartProduct.size = size;
-      cartProduct.quantity = quantity;
-      setcartItems([...cartItems, cartProduct]);
-    }
+    const cartProduct = all_product.find((product) => product.id === itemId);
+    cartProduct.size = size;
+    cartProduct.Quantity = quantity;
+    console.log(cartProduct);
+    setcartItems([...cartItems, cartProduct]);
   };
-  
   const removeFromCart = (itemId) => {
     setcartItems(cartItems.filter((product) => product.id !== itemId));
   };
 
   const getTotalCartAmount = () => {
-    return cartItems.reduce((total, product) => total + (product.new_price * product.quantity), 0);
+    const total = 0;
+    return cartItems.map((product) => total + product.new_price)[0] || 0;
   };
-  
-  
 
   const getTotalCartItems = () => {
     return cartItems.length;
