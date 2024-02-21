@@ -114,4 +114,6 @@ button{
     background: black;
     color: white;
     cursor: pointer;
+    margin-top: 20px;
+    margin-left: -16px;
 }
