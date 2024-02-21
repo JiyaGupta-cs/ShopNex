@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./CartItems.css";
 import { ShopContext } from "../../Context/ShopContext";
 import remove_icon from "../Assets/cart_cross_icon.png";
+
 const CartItems = () => {
   const { cartItems, removeFromCart, getTotalCartAmount, theme } =
     useContext(ShopContext);
@@ -26,12 +27,12 @@ const CartItems = () => {
       {cartItems.map((item) => {
         return (
           <div key={item.id}>
-            <div className="cartitems-format cartitems-format-main">
+            <div className={`cartitems-format cartitems-format-main ci_${theme}`}>
               <img src={item.image} alt="" className="carticon-product-icon" />
               <p>{item.name}</p>
               <p className="text-Align">${item.new_price}</p>
               <p className="text-Align">{item.size}</p>
-              <button className="cartitems-quantity">{item.quantity}</button>
+              <p className="cartitems-quantity">{item.quantity}</p>
               <p className="text-Align">${calculateTotalPrice(item)}</p> {/* Display total price for each item */}
               <img
                 className="cartitems-remove-icon"
