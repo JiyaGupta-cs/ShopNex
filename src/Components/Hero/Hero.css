@@ -73,3 +73,15 @@
   margin-top: 150px;
   margin-left: 138px;
 }
+
+/* CSS file, e.g., App.css */
+.latest-collection-link {
+    text-decoration: none; /* Removes underline */
+    color: #ffffff; /* Sets initial text color, e.g., black */
+  }
+  
+  .latest-collection-link:hover {
+    color: #fdfdfd; /* Changes text color on hover, e.g., to a shade of blue */
+    /* Add any other hover effects here, e.g., underline, text shadow, etc. */
+  }
+  
