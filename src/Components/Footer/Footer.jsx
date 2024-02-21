@@ -16,9 +16,9 @@ const Footer = () => {
                 <p className={`footer_${theme}`}>ShopNex</p>
             </div>
             <ul className={'footer-links_'+theme}>
-                <li>Company</li>
-                <li>Products</li>
-                <li>Offices</li>
+            <li> <Link className={`link_${theme}`} to='/company'>Company</Link></li>
+            <li>Products</li>
+            <li> <Link className={`link_${theme}`} to='/offices'>Offices</Link></li>
                 <li> <Link className={`link_${theme}`} to='/about'>About</Link></li>
                 <li> <Link className={`link_${theme}`} to='/contact'>Contact Us</Link></li>
             </ul>
