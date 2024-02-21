@@ -83,35 +83,45 @@ button{
     color: white;
 }
 
-
-.cartitems-promocode{
+.cartitems-promocode {
     flex: 1;
     font-size: 16px;
-    font-weight: 500;   
-}
-.cartitems-promocode p{
+    font-weight: 500;
+  }
+  
+  .cartitems-promocode p {
     color: #555;
-}
-.cartitems-promobox{
-    width: 504px;
+  }
+  
+  .cartitems-promobox {
+    width: 100%;
     margin-top: 15px;
-    padding-left: 20px;
-    height: 58px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
     background: #eaeaea;
-}
-.cartitems-promobox input{
+    border-radius: 8px;
+  }
+  
+  .cartitems-promobox input {
+    flex: 1;
     border: none;
     outline: none;
     background: transparent;
     font-size: 16px;
-    width: 330px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+  }
+  
+  .cartitems-promobox button {
+    width: 150px;
     height: 50px;
-}
-.cartitems-promobox button{
-    width: 170px;
-    height: 58px;
     font-size: 16px;
     background: black;
     color: white;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
-}
+  }
+  
