@@ -2,10 +2,15 @@ import React, { useContext } from "react";
 import "./CartItems.css";
 import { ShopContext } from "../../Context/ShopContext";
 import remove_icon from "../Assets/cart_cross_icon.png";
-
 const CartItems = () => {
-  const { all_product, cartItems, removeFromCart, getTotalCartAmount,theme } =
+  const { cartItems, removeFromCart, getTotalCartAmount, theme } =
     useContext(ShopContext);
+
+  // Function to calculate the total price for each item considering the quantity
+  const calculateTotalPrice = (item) => {
+    return item.new_price * item.quantity;
+  };
+
   return (
     <div className="cartitems">
       <div className={`cartitems-format-main ci_${theme}`}>
@@ -18,21 +23,21 @@ const CartItems = () => {
         <p>Remove</p>
       </div>
       <hr />
-      {cartItems.map((e) => {
+      {cartItems.map((item) => {
         return (
-          <div>
+          <div key={item.id}>
             <div className="cartitems-format cartitems-format-main">
-              <img src={e.image} alt="" className="carticon-product-icon" />
-              <p>{e.name}</p>
-              <p className="text-Align">${e.new_price}</p>
-              <p className="text-Align">{e?.size}</p>
-              <button className="cartitems-quantity">{e?.Quantity}</button>
-              <p className="text-Align">${e.new_price}</p>
+              <img src={item.image} alt="" className="carticon-product-icon" />
+              <p>{item.name}</p>
+              <p className="text-Align">${item.new_price}</p>
+              <p className="text-Align">{item.size}</p>
+              <button className="cartitems-quantity">{item.quantity}</button>
+              <p className="text-Align">${calculateTotalPrice(item)}</p> {/* Display total price for each item */}
               <img
                 className="cartitems-remove-icon"
                 src={remove_icon}
                 onClick={() => {
-                  removeFromCart(e.id);
+                  removeFromCart(item.id);
                 }}
                 alt=""
               />
