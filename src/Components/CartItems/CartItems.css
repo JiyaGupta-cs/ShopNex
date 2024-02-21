@@ -106,6 +106,7 @@ button{
     font-size: 16px;
     width: 330px;
     height: 50px;
+    margin-bottom: 20px;
 }
 .cartitems-promobox button{
     width: 170px;
