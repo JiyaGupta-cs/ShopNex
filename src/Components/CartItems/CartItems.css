@@ -44,12 +44,9 @@
 }
 
 .cartitems-quantity {
-    width: 64px;
-    height: 50px;
-    border: 2px solid #ebebeb;
-    background: #fff;
-    text-align: center;
-    color: rgb(5, 5, 5);
+   margin: auto;
+   margin-bottom: 38px;
+
 }
 
 .cartitems-down{
