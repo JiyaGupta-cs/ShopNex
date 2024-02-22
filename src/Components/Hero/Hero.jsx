@@ -5,16 +5,11 @@ import arrow_icon from '../Assets/arrow.png'
 import hero_image from '../Assets/hero_image.png'
 import { ShopContext } from '../../Context/ShopContext'
 import React, { useContext, useState } from 'react'
-// import './Navbar.css'
-//import logo from '../Assets/logo.png'
-//import cart_icon from '../Assets/cart_icon.png'
-//import cart_icon_dark from '../Assets/cart_icon_dark.png'
 import { Link } from 'react-router-dom'
-// import { ShopContext } from '../../Context/ShopContext'
 
 const Hero = () => {
     const {theme}=useContext(ShopContext)
-    const [menu,setMenu]=useState("shop");
+    // const [menu,setMenu]=useState("shop");
     return (
         <div className={'hero_'+theme}>
             <div className="hero-left">

@@ -2,5 +2,8 @@
     "githubPullRequests.ignoredPullRequestBranches": [
         "master",
         "master"
+    ],
+    "cSpell.words": [
+        "latestcollection"
     ]
 }
