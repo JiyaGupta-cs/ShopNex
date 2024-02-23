@@ -38,9 +38,15 @@
 }
 
 .cartitems-remove-icon {
-    width: 15px;
+    width: 28px;
+    height: 28px;
     margin: 0px 40px;
     cursor: pointer;
+    background-color: #ff5252; 
+    border-radius: 4px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cartitems-quantity {
@@ -87,7 +93,7 @@ button{
     font-weight: 500;   
 }
 .cartitems-promocode p{
-    color: #555;
+    color: #941818;
 }
 .cartitems-promobox{
     width: 504px;
