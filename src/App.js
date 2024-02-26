@@ -13,6 +13,7 @@ import women_banner from './Components/Assets/banner_women.png'
 import kids_banner from './Components/Assets/banner_kids.png'
 import About from './Pages/About';
 import Contact from './Pages/Contact';
+import ScrollToTop from 'react-scroll-to-top';
 import { useContext,useEffect } from 'react';
 import { ShopContext } from './Context/ShopContext';
 function App() {
@@ -36,6 +37,7 @@ function App() {
       </Routes>
       <Footer/>
       </BrowserRouter>
+      <ScrollToTop smooth component={<p style={{ color: "blue" }}>↑</p>}/>
     </div>
   );
 }
