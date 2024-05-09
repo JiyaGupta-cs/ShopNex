@@ -1,29 +1,38 @@
-.container-my_dark{
-    margin: 40px;
-    margin-left: 60px;
+.container-my_dark {
+    margin: 40px auto; /* Adjusted margin to center horizontally */
+    max-width: 1600px; /* Added max-width to limit container width */
     display: flex;
     flex-wrap: wrap;
+    justify-content: center; /* Center align items horizontally */
 }
-.container-my_light{
-    margin: 40px;
-    margin-left: 60px;
+
+.container-my_light {
+    margin: 40px auto; /* Adjusted margin to center horizontally */
+    max-width: 1600px; /* Added max-width to limit container width */
     display: flex;
     flex-wrap: wrap;
-    color:white;
+    color: white;
+    justify-content: center; /* Center align items horizontally */
 }
-#myheading{
+
+#myheading {
     width: 100%;
-    align-content: center;
+    text-align: center; /* Center align heading text */
     margin-bottom: 30px;
+    font-weight: 600; /* Increased font weight */
+    font-size: 100px;
 }
-.content{
+
+.content {
     margin-top: 0;
     flex-shrink: 1;
     display: flex;
+    justify-content: center; /* Center align content horizontally */
     flex-wrap: wrap;
 }
 
-.list{
+.list {
     flex-wrap: wrap;
     width: 400px;
+    margin-bottom: 20px; /* Added margin-bottom for spacing */
 }
