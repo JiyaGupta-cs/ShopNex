@@ -28,29 +28,33 @@
     justify-content: center;
 }
 
+.h1_dark, .p_dark {
+    color: #ffffff; /* changed to white */
+}
+
+.h1_light, .p_light {
+    color: white;
+}
+
 .offers-left .h1_dark {
-    color: #171717;
     font-size: 80px;
     font-weight: 600;
 }
 
-.h1_light{
-    color: white;
+.h1_light {
     font-size: 80px;
     font-weight: 600;
 }
 
 .offers-left .p_dark {
-    color: #171717;
     font-size: 22px;
     font-weight: 600;
 }
 
- .p_light{
-    color: white;
+.p_light {
     font-size: 22px;
     font-weight: 600;
- }
+}
 
 .offers-left button {
     width: 282px;
@@ -66,7 +70,6 @@
 }
 
 .offers-right {
-    /* flex: 1; */
     display: flex;
     align-items: center;
     justify-content: flex-end;
