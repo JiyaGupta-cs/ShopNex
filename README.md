@@ -9,13 +9,13 @@ Shopnex is your one-stop destination for fashionable clothing for the entire fam
 
 ## Features - ##
 
-🏠 **Home page :** The main landing page for your platform.
+🏠 **Home page:** The main landing page for your platform.
 
 👪 **Category-wise Product listing page :** Browse and filter products by category.
 
-📄 **Individual product page :** Detailed info on a single product.
+📄 **Individual product page:** Detailed info on a single product.
 
-🛒 **Cart Feature :** Add, remove, and purchase products.
+🛒 **Cart Feature:** Add, remove, and purchase products.
 
 ## Built With - ##
   * React JS :atom_symbol:
