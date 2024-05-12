@@ -23,7 +23,7 @@ const LoginSignup = () => {
                    <Components.Input type='email' placeholder='Email' />
                    <Components.Input type='password' placeholder='Password' />
                    <Components.Anchor href='#'>Forgot your password?</Components.Anchor>
-                   <Components.Button>Sigin In</Components.Button>
+                   <Components.Button>Sign In</Components.Button>
                </Components.Form>
           </Components.SignInContainer>
 
@@ -46,7 +46,7 @@ const LoginSignup = () => {
                         Enter Your personal details and start journey with us
                     </Components.Paragraph>
                         <Components.GhostButton onClick={() => toggle(false)}>
-                            Sigin Up
+                            Sign Up
                         </Components.GhostButton> 
                   </Components.RightOverlayPanel>
 
