@@ -9,6 +9,7 @@ import { ShopContext } from '../../Context/ShopContext'
 
 const Footer = () => {
     const {theme}=useContext(ShopContext);
+    const year= new Date().getFullYear();
     return (
         <div className='footer'>
             <div className="footer-logo">
@@ -35,7 +36,7 @@ const Footer = () => {
             </div>
             <div className={`footer-copyright_${theme}`}>
                 <hr className={`hr_${theme}`} />
-                <p>Copyright @ 2023 - All Rights Reserved</p>
+                <p>Copyright @ {year} - All Rights Reserved</p>
             </div>
         </div>
     )
