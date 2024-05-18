@@ -8,8 +8,10 @@ const NewCollections = () => {
     const {theme}=useContext(ShopContext);
     return (
         <div className='new-collections'>
-            <h1 className={`h1_${theme}`}>NEW COLLECTIONS</h1>
-            <hr className={`hr_${theme}`} />
+            <div>
+                <h1 className={`h1_${theme}`}>NEW COLLECTIONS</h1>
+                <hr className={`hr_${theme}`} />
+            </div>
             <div className="collections">
             {new_collection.map((item,i)=>{
                 return <Item key={i}   id={item.id}  name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price} />

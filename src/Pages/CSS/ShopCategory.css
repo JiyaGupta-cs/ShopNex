@@ -11,37 +11,6 @@
   align-items: center;
 }
 
-.shopcategory-sort_dark {
-  font-family: inherit;
-  text-align: center;
-  padding: 10px 35px 10px 20px;
-  border-radius: 40px;
-  border: 1px solid #888;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  background: url("../../Components/Assets/dropdown_icon.png") no-repeat right
-    center;
-  background-position: calc(100% - 15px) center;
-  font-size: 16px;
-}
-.shopcategory-sort_light {
-  font-family: inherit;
-  text-align: center;
-  padding: 10px 35px 10px 20px;
-  border-radius: 40px;
-  border: 1px solid #ffffff;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  background: url("../../Components/Assets/dropdown_icon.png") no-repeat right
-    center;
-  background-position: calc(100% - 15px) center;
-  font-size: 16px;
-  background: rgb(255, 255, 255);
-}
-
-.shopcategory-sort option {
-  text-align: left;
-}
 
 .shopcategory-indexSort p span {
   font-weight: 600;
@@ -58,7 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 150px auto;
+  margin: 50px auto;
   width: 233px;
   height: 69px;
   border-radius: 75px;
@@ -74,3 +43,84 @@
 .op_light{
   color: white;
 }
+
+@media screen and (max-width:768px) {
+  .shopcategory-banner{
+    margin: 0;
+    width: 100vw;
+    height: 130px;
+  }
+  .shopcategory-indexSort{
+    margin: 10px;
+  }
+  .shopcategory-products{
+    margin: 20px;
+    grid-template-columns: 1fr;
+  }
+  .shopcategory-loadmore{
+    margin: 30px;
+  }
+}
+
+
+.span_light{
+  color: white;
+}
+
+.span_dark{
+  color: black;
+}
+
+
+
+/* ShopCategorySort.css */
+
+.shopcategory-sort_light {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  span{
+    color: white;
+  }
+}
+
+.shopcategory-sort_dark {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  span{
+    color: black
+  }
+}
+
+.shopcategory-sort_light select,
+.shopcategory-sort_dark select {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.shopcategory-sort_light select:focus,
+.shopcategory-sort_dark select:focus {
+  outline: none;
+  border-color: #007bff; /* Adjust focus border color */
+}
+
+@media screen and (max-width: 768px) {
+  .shopcategory-sort_light,
+  .shopcategory-sort_dark {
+    flex-direction: column;
+  }
+
+  .shopcategory-sort_light select,
+  .shopcategory-sort_dark select {
+    margin-left: 0;
+    margin-top: 5px;
+    width: 100%;
+  }
+}
+

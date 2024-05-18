@@ -1,6 +1,6 @@
 .navbar{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 16px;
     box-shadow: 0 1px 3px -2px black;
 }
@@ -141,4 +141,88 @@ button{
     height: auto;
 }
 
+@media screen and (min-width:787px) {
+    .icon{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .navbar{
+        padding: 10px;
+    }
+    .nav-logo{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-logo-link{
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-logo-link p{
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .nav-login-cart{
+        display: flex;
+    }
+    .nav-login-cart .log_btn{
+        width: 80px;
+        height: 58px;
+        outline: none;
+        border:1px solid #7a7a7a;
+        border-radius: 75px;
+        color: #515151;
+        font-size: 20px;
+        font-weight: 500;
+        background: white;
+        cursor: pointer;
+    }
+    .nav-menu {
+        display: block;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border-top: 1pxsolid #fff;
+      position: absolute;
+      top: 120px;
+      left: -110%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      gap: 20px;
+      padding: 20px;
+    }
+    ul{
+        padding-left: 0;
+    }
+  
+    .nav-menu.active {
+      background: white;
+      left: 0px;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+    .nav-item .active {
+      color: #ffdd40;
+      border: none;
+    }
+    .nav-links {
+      padding: 1.5rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .nav-icon {
+      display: block;
+      /* position: absolute; */
+      /* top: 50%; */
+      /* right: 0; */
+      /* transform: translate(-100%, -50%); */
+      width: 2rem;
+      height: 2rem;
+      cursor: pointer;
+      color: #ffdd40;
+    }
+  }
 

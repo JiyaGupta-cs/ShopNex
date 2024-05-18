@@ -72,3 +72,35 @@
     justify-content: flex-end;
     padding-top: 50px;
 }
+
+@media  screen and (max-width:768px) {
+    .offers{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 70px;
+        width: fit-content;
+        height: fit-content;
+        padding: 0;
+    }
+    .offers-left{
+        padding: 10px;
+
+        .h1_dark{
+            font-size: 60px;
+        }
+        .h1_light{
+            font-size: 60px;
+        }
+    }
+    .offers-right{
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 90%;
+            height: 80%;
+        }
+    }
+}

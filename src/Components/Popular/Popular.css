@@ -4,35 +4,54 @@
     align-items: center;
     gap: 30px;
     margin-bottom: 100px;
-}
-.popular .h1p_dark {
+    padding: 40px;
+  }
+  
+  .h1p_dark {
     color: #171717;
     font-size: 30px;
     font-weight: 600;
-}
-
-.h1p_light{
+  }
+  
+  .h1p_light {
     color: white;
     font-size: 30px;
     font-weight: 600;
-}
-
-.popular .hrp_dark{
+  }
+  
+  .hrp_dark {
     width: 200px;
     height: 6px;
     border-radius: 10px;
     background: #252525;
-}
-
-.hrp_light{
+  }
+  
+  .hrp_light {
     width: 200px;
     height: 6px;
     border-radius: 10px;
     background: white;
-}
-
-.popular-item{
-    margin-top: 50px;
-    display: flex;
+  }
+  
+  .popular-item {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-}
+  }
+  
+  @media screen and (max-width: 786px) {
+    .popular-item {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); /* Change to 2 columns on smaller screens */
+      gap: 20px; /* Adjust the gap as needed */
+      padding: 0px; /* Add padding to the grid container */
+    }
+    .h1p_light{
+        font-size: 25px;
+    }
+    .h1p_dark{
+        font-size: 25px;
+    }
+  }
+  

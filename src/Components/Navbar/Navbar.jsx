@@ -7,11 +7,15 @@ import moonIcon from '../Assets/dark_mode.png';
 import sunIcon from '../Assets/light_mode.png';
 import { Link } from 'react-router-dom';
 import { ShopContext } from '../../Context/ShopContext';
+import Hamburger from 'hamburger-react'
 
 const Navbar = () => {
     const [icon, setIcon] = useState(cart_icon);
     const [menu, setMenu] = useState("shop");
     const { getTotalCartItems, theme, setTheme } = useContext(ShopContext);
+    const [click,setClick] = useState(false);
+    const handleClick= () => {setClick(!click)}
+    const [isOpen, setOpen] = useState(false)
 
     const toggle = () => {
         if (theme === "dark") {
@@ -34,8 +38,21 @@ const Navbar = () => {
                     <img src={logo} alt="ShopNex Logo" style={{ marginRight: '10px' }} />
                     <p className={`pnav_${theme}`}>ShopNex</p>
                 </Link>
+                <div className="nav-icon" onClick={handleClick}>
+                    {/* <i className={click ? "fas fa-times" : "fas fa-bars"}></i>  */}
+
+                    {click ? (
+                    <span className="icon">
+                    <Hamburger toggled={isOpen} toggle={setOpen} />
+                    </span>
+                    ) : (
+                    <span className="icon">
+                    <Hamburger toggled={isOpen} toggle={setOpen} />
+                    </span>
+                    )}
+                </div>
             </div>
-            <ul className="nav-menu">
+            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                 <li onClick={() => { setMenu("shop") }}>
                     <Link to='/'>Shop</Link>
                     {menu === "shop" ? <hr /> : <></>}
@@ -53,6 +70,7 @@ const Navbar = () => {
                     {menu === "kids" ? <hr /> : <></>}
                 </li>
             </ul>
+            
             <div className="nav-login-cart">
                 <Link to='/login'><button className='log_btn'>Login</button></Link>
                 <Link to='/cart'><img src={icon} alt="" className='cart' /></Link>

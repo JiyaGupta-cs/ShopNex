@@ -10,7 +10,7 @@ const Hero = () => {
     return (
         <div className={'hero_'+theme}>
             <div className="hero-left">
-                <h2  className={'h2h_'+theme}>NEW ARRIVALS ONLY</h2>
+                <h2 className={'h2h_'+theme}>NEW ARRIVALS ONLY</h2>
                 <div>
                     <div className="hero-hand-icon">
                         <p className={'ph_'+theme}>New</p>

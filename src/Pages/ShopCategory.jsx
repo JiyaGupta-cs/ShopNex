@@ -42,11 +42,11 @@ const ShopCategory = (props) => {
     <div className='shop-category'>
       <img className='shopcategory-banner' src={props.banner} alt='' />
       <div className='shopcategory-indexSort'>
-        <p>
+        <p className={`span_${theme}`}> 
           <span>{`Showing ${startIndex + 1}-${endIndex}`}</span> out of {totalProducts} products
         </p>
         <div className={`shopcategory-sort_${theme}`}>
-          Sort By
+          <span>Sort By:</span>
           <select
             name="shopcategory-sort"
             value={sorting}
@@ -55,8 +55,8 @@ const ShopCategory = (props) => {
             <option value="0">Low to High</option>
             <option value="1">High to Low</option>
           </select>
-          {/* <img src={dropdown_icon} alt='' /> */}
         </div>
+
       </div>
       <div className='shopcategory-products'>
         {filteredProducts.slice(startIndex, endIndex).map((item, i) => (
