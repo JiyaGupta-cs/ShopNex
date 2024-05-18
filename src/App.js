@@ -37,7 +37,7 @@ function App() {
       </Routes>
       <Footer/>
       </BrowserRouter>
-      <ScrollToTop smooth component={<p style={{ color: "blue" }}>↑</p>}/>
+      <ScrollToTop smooth component={<p style={{ color: "blue", fontSize: "20px", cursor: "pointer" }}>↑</p>}/>
     </div>
   );
 }
