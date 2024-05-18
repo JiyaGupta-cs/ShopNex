@@ -49,7 +49,7 @@
     align-items: center;
     gap:45px;
 }
-.nav-login-cart .log_btn{
+.nav-login-cart {
     width: 157px;
     height: 58px;
     outline: none;
@@ -61,6 +61,26 @@
     background: white;
     cursor: pointer;
 }
+.log_btn {
+    
+    width: 157px;
+    height: 58px;
+    outline: none;
+    border:1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.log_btn:hover {
+    background-color: orange; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
 .nav-login-cart  .log_btn:active{
     background: #f3f3f3;
 }
