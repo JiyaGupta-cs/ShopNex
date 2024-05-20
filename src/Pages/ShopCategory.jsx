@@ -3,6 +3,7 @@ import './CSS/ShopCategory.css';
 import { ShopContext } from '../Context/ShopContext';
 import dropdown_icon from '../Components/Assets/dropdown_icon.png';
 import Item from '../Components/Item/Item';
+import { Fade } from "react-awesome-reveal";
 
 const ShopCategory = (props) => {
   const { all_product, theme } = useContext(ShopContext);
@@ -40,7 +41,9 @@ const ShopCategory = (props) => {
 
   return (
     <div className='shop-category'>
+      <Fade direction='up'>
       <img className='shopcategory-banner' src={props.banner} alt='' />
+      </Fade>
       <div className='shopcategory-indexSort'>
         <p>
           <span>{`Showing ${startIndex + 1}-${endIndex}`}</span> out of {totalProducts} products

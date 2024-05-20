@@ -5,30 +5,39 @@ import arrow_icon from "../Assets/arrow.png";
 import hero_image from "../Assets/hero_image.png";
 import { ShopContext } from "../../Context/ShopContext";
 import { Link } from "react-router-dom";
+import { Fade, Slide } from "react-awesome-reveal";
 
 const Hero = () => {
   const { theme } = useContext(ShopContext);
   return (
     <div className={"hero_" + theme}>
       <div className="hero-left">
+        <Fade direction="down">
         <h2 className={"h2h_" + theme}>NEW ARRIVALS ONLY</h2>
+        </Fade>
         <div>
+          <Fade>
           <div className="hero-hand-icon">
             <p className={"ph_" + theme}>New</p>
             <img src={hand_icon} alt="" />
           </div>
           <p className={"ph_" + theme}>Collections</p>
           <p className={"ph_" + theme}>For Everyone</p>
+          </Fade>
         </div>
         <Link className="link" to={"/collections"}>
+          <Slide direction="up">
           <div className="hero-latest-btn">
             <div className={"div_" + theme}>Latest Collection</div>
             <img src={arrow_icon} alt="" />
           </div>
+          </Slide>
         </Link>
       </div>
       <div className="hero-right">
+        <Fade>
         <img src={hero_image} alt="" />
+        </Fade>
       </div>
     </div>
   );

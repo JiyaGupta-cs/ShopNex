@@ -3,6 +3,7 @@ import "./CartItems.css";
 import { ShopContext } from "../../Context/ShopContext";
 import remove_icon from "../Assets/cart_cross_icon.png";
 import placeholder_image from "../Assets/empty-cart.png";
+import { Fade } from "react-awesome-reveal";
 
 const CartItems = () => {
   const { cartItems, removeFromCart, getTotalCartAmount, theme } =
@@ -19,6 +20,7 @@ const CartItems = () => {
   return (
     <div className="cartitems">
       <div className={`cartitems-format-main ci_${theme}`}>
+        <Fade direction="down">
         <p>Products</p>
         <p>Title</p>
         <p>Price</p>
@@ -26,7 +28,9 @@ const CartItems = () => {
         <p>Quantity</p>
         <p>Total</p>
         <p>Remove</p>
+        </Fade>
       </div>
+      <Fade>
       {isEmptyCart && (
         <div className="empty-cart">
           <img
@@ -105,6 +109,7 @@ const CartItems = () => {
           </div>
         </div>
       </div>
+      </Fade>
     </div>
   );
 };

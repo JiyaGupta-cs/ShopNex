@@ -7,6 +7,7 @@ import moonIcon from '../Assets/dark_mode.png';
 import sunIcon from '../Assets/light_mode.png';
 import { Link } from 'react-router-dom';
 import { ShopContext } from '../../Context/ShopContext';
+import { Slide } from "react-awesome-reveal";
 
 const Navbar = () => {
     const [icon, setIcon] = useState(cart_icon);
@@ -29,6 +30,7 @@ const Navbar = () => {
 
     return (
         <div className={`navbar`} id="nav">
+            <Slide direction="down">
             <div className="nav-logo">
                 <Link className="nav-logo-link" to="/">
                     <img src={logo} alt="ShopNex Logo" style={{ marginRight: '10px' }} />
@@ -63,6 +65,7 @@ const Navbar = () => {
                     </button>
                 </div>
             </div>
+            </Slide>
         </div>
     )
 }
