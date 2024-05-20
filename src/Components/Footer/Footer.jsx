@@ -6,11 +6,13 @@ import pintester_icon from "../Assets/pintester_icon.png";
 import whatsapp_icon from "../Assets/whatsapp_icon.png";
 import { Link } from "react-router-dom";
 import { ShopContext } from "../../Context/ShopContext";
+import { Fade } from "react-awesome-reveal";
 
 const Footer = () => {
   const { theme } = useContext(ShopContext);
   return (
     <div className="footer">
+      <Fade delay={3}>
       <div className="footer-logo">
         <img src={footer_logo} alt="" />
         <p className={`footer_${theme}`}>ShopNex</p>
@@ -45,8 +47,11 @@ const Footer = () => {
       </div>
       <div className={`footer-copyright_${theme}`}>
         <hr className={`hr_${theme}`} />
+        <Fade direction="up">
         <p>Copyright @ {new Date().getFullYear()} - All Rights Reserved</p>
+        </Fade>
       </div>
+      </Fade>
     </div>
   );
 };

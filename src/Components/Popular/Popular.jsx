@@ -3,12 +3,15 @@ import './Popular.css'
 import data_product from '../Assets/data'
 import Item from '../Item/Item'
 import { ShopContext } from '../../Context/ShopContext'
+import { Fade } from "react-awesome-reveal";
 
 const Popular = () => {
     const{theme}=useContext(ShopContext);
     return (
         <div className='popular'>
+            <Fade direction='down'>
             <h1 className={`h1p_${theme}`}>POPULAR IN WOMEN</h1>
+            </Fade>
             <hr className={`hrp_${theme}`} />
             <div className="popular-item">
                 {data_product.map((item,i)=>{

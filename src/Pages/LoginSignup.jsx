@@ -1,10 +1,12 @@
 import React from 'react'
 import * as Components from './Components';
+import { Fade } from "react-awesome-reveal";
 
 
 const LoginSignup = () => {
   const [signIn, toggle] = React.useState(true);
   return(
+    <Fade direction='right'>
     <Components.div>
         <Components.Container>
           <Components.SignUpContainer signinIn={signIn}>
@@ -55,7 +57,7 @@ const LoginSignup = () => {
 
       </Components.Container>
     </Components.div>
-      
+    </Fade>
   )
 }
 

@@ -2,10 +2,12 @@ import React, { useContext } from 'react'
 import './Item.css'
 import { Link } from 'react-router-dom'
 import { ShopContext } from '../../Context/ShopContext'
+import { Fade } from "react-awesome-reveal";
 
 const Item = (props) => {
     const {theme}=useContext(ShopContext);
     return (
+        <Fade>
         <div className='item'>
             <Link to={`/product/${props.id}`}> <img onClick={window.scrollTo(0,0)} src={props.image} alt="" /></Link>
             <p className={`pit_${theme}`}>{props.name}</p><p className={`pit_${theme}`}>{props.id}</p>
@@ -14,6 +16,7 @@ const Item = (props) => {
                 <div className={`item-price-old_${theme}`}>${props.old_price}</div>
             </div>
         </div>
+        </Fade>
     )
 }
 

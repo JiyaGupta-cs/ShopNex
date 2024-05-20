@@ -3,11 +3,13 @@ import "./Offers.css";
 import exclusive_image from "../Assets/exclusive_image.png";
 import { ShopContext } from "../../Context/ShopContext";
 import { Link } from "react-router-dom";
+import { Zoom } from "react-awesome-reveal";
 
 const Offers = () => {
   const { theme } = useContext(ShopContext);
   return (
     <Link className="link" to={`/offers`}>
+      <Zoom>
       <div className="offers">
         <div className="offers-left">
           <h1 className={`h1_${theme}`}>Exclusive</h1>
@@ -19,6 +21,7 @@ const Offers = () => {
           <img src={exclusive_image} alt="" />
         </div>
       </div>
+      </Zoom>
     </Link>
   );
 };
