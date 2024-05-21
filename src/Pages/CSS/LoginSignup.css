@@ -66,3 +66,9 @@
     font-size: 18px;
     font-weight: 500;
 }
+@media (max-width:641px){
+    /* .signUpLogin{
+        display: flex;
+        flex-direction: column; */
+    /* } */
+}
