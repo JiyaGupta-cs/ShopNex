@@ -140,5 +140,16 @@ button{
     width: 80%;
     height: auto;
 }
-
+@media (max-width:641px){
+    .nav-menu{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .nav-login-cart .log_btn{
+        width: auto;
+    }
+    
+}
 

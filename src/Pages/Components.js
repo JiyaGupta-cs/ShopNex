@@ -58,7 +58,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
-padding: 0 50px;
+padding: 3%;
 height: 100%;
 text-align: center;
 `;

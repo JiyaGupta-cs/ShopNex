@@ -5,6 +5,7 @@ import * as Components from './Components';
 const LoginSignup = () => {
   const [signIn, toggle] = React.useState(true);
   return(
+    <div className='signUpLogin'>
     <Components.div>
         <Components.Container>
           <Components.SignUpContainer signinIn={signIn}>
@@ -55,7 +56,7 @@ const LoginSignup = () => {
 
       </Components.Container>
     </Components.div>
-      
+   </div>   
   )
 }
 

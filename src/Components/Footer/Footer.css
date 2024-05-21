@@ -124,3 +124,28 @@
 .footer-social-icon img:hover {
     transform: scale(1.1); /* Scale up on hover */
 }
+@media (min-height:320px) {
+    .footer-links_dark{
+        flex-direction: column;
+    }
+    
+}
+@media (min-width:481px)  { .footer-links_dark{
+    flex-direction: column;
+} }
+@media (min-width:641px)  { .footer-links_dark{
+    flex-direction: row;
+} }
+@media (min-width:961px)  { 
+    .footer-links_dark{
+        flex-direction: row;
+    }
+ }
+@media (min-width:1025px) {
+    .footer-links_dark{
+        flex-direction: row;
+    }
+ }
+@media (min-width:1281px) { .footer-links_dark{
+    flex-direction: row;
+} }
