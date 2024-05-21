@@ -27,6 +27,9 @@
     color: #626262;
     font-size: 20px;
     font-weight: 500;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
 }
 .nav-menu li{
     display: flex;
@@ -140,5 +143,18 @@ button{
     width: 80%;
     height: auto;
 }
+.nav-menu li :hover{
+  text-decoration: underline;
+  
 
+}
+.nav-menu li:focus{
+    text-decoration: underline;
+    
+  }
+
+.nav-menu li:active{
+    text-decoration: underline;
+
+  }
 

@@ -4,6 +4,9 @@
     align-items: center;
     gap: 30px;
     margin-bottom: 100px;
+    margin: auto;
+    margin-top: 100px;
+    padding: auto;
 }
 .popular .h1p_dark {
     color: #171717;
@@ -34,5 +37,10 @@
 .popular-item{
     margin-top: 50px;
     display: flex;
-    gap: 30px;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
 }

@@ -29,6 +29,7 @@
     gap: 50px;
     color: #252525;
     font-size: 20px;
+    flex-wrap: wrap;
 }
 
 .footer-links_light {
@@ -37,6 +38,7 @@
     gap: 50px;
     color: white;
     font-size: 20px;
+    flex-wrap: wrap;
 }
 .footer-links li {
     cursor: pointer;

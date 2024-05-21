@@ -35,8 +35,10 @@
     gap: 30px;
 }
 .collections{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
     margin-top: 50px;
     gap: 30px;
 }
