@@ -1,23 +1,33 @@
-import React, { useContext } from 'react'
-import './NewCollections.css'
-import new_collection from '../Assets/new_collections'
-import Item from '../Item/Item'
-import { ShopContext } from '../../Context/ShopContext'
+import React, { useContext } from "react";
+import "./NewCollections.css";
+import new_collection from "../Assets/new_collections";
+import Item from "../Item/Item";
+import { ShopContext } from "../../Context/ShopContext";
 
 const NewCollections = () => {
-    const {theme}=useContext(ShopContext);
-    return (
-        <div className='new-collections'>
-            <h1 className={`h1_${theme}`}>NEW COLLECTIONS</h1>
-            <hr className={`hr_${theme}`} />
-            <div className="collections">
-            {new_collection.map((item,i)=>{
-                return <Item key={i}   id={item.id}  name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price} />
-            })}
-            </div>
+  const { theme } = useContext(ShopContext);
+  return (
+    <div className="new-collections">
+      <div>
+        <h1 className={`h1_${theme}`}>NEW COLLECTIONS</h1>
+        <hr className={`hr_${theme}`} />
+      </div>
+      <div className="collections">
+        {new_collection.map((item, i) => {
+          return (
+            <Item
+              key={i}
+              id={item.id}
+              name={item.name}
+              image={item.image}
+              new_price={item.new_price}
+              old_price={item.old_price}
+            />
+          );
+        })}
+      </div>
+    </div>
+  );
+};
 
-        </div>
-    )
-}
-
-export default NewCollections
+export default NewCollections;

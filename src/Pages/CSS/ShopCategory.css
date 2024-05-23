@@ -68,9 +68,31 @@
   font-weight: 500;
   cursor: pointer;
 }
-.psc_light{
-  color:white;
-}
-.op_light{
+.psc_light {
   color: white;
+}
+.op_light {
+  color: white;
+}
+.shopcategory-count_dark {
+  color: #171717;
+}
+.shopcategory-count_light {
+  color: white;
+}
+@media (max-width: 768px) {
+  .shopcategory-indexSort {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .shopcategory-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 0px;
+  }
 }

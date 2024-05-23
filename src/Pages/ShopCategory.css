@@ -1,11 +1,9 @@
-
 .shop-category {
   padding-bottom: 20px;
 }
 
 .shopcategory-loadmore {
-  /* Styles for the Explore More button */
-  background-color: #ff5733 !important; 
+  background-color: #ff5733 !important;
   color: #fff; /* Text color */
   padding: 10px 15px;
   cursor: pointer;
@@ -14,4 +12,31 @@
 
 .shopcategory-loadmore:hover {
   background-color: #e64a2e !important; /* Change color on hover */
+}
+
+.shop-category_dark {
+  color: white;
+}
+
+/* Responsive styling for mobile screens */
+@media (max-width: 768px) {
+  .shopcategory-indexSort {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .shopcategory-banner {
+    width: 100%;
+    height: auto;
+  }
+
+  .shopcategory-products {
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr 0fr;
+    gap: 20px;
+    padding: 0px;
+  }
 }

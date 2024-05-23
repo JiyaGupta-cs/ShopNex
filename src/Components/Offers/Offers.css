@@ -1,74 +1,106 @@
 .offers {
-    width: 65%;
-    height: 60vh;
-    display: flex;
-    margin: auto;
-    padding: 0px 140px;
-    margin-bottom: 150px;
-    background: linear-gradient(180deg, #fde1ff 0%, #282c34 60%);
-    animation: floating 3s ease-in-out infinite;
+  width: 65%;
+  height: 60vh;
+  display: flex;
+  margin: auto;
+  padding: 0px 140px;
+  margin-bottom: 150px;
+  background: linear-gradient(180deg, #fde1ff 0%, #282c34 60%);
+  animation: floating 3s ease-in-out infinite;
 }
 
 @keyframes floating {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .offers-left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .offers-left .h1_dark {
-    color: #171717;
-    font-size: 80px;
-    font-weight: 600;
+  color: #171717;
+  font-size: 80px;
+  font-weight: 600;
 }
 
-.h1_light{
-    color: white;
-    font-size: 80px;
-    font-weight: 600;
+.h1_light {
+  color: white;
+  font-size: 80px;
+  font-weight: 600;
 }
 
 .offers-left .p_dark {
-    color: #171717;
-    font-size: 22px;
-    font-weight: 600;
+  color: #171717;
+  font-size: 22px;
+  font-weight: 600;
 }
 
- .p_light{
-    color: white;
-    font-size: 22px;
-    font-weight: 600;
- }
+.p_light {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
 
 .offers-left button {
-    width: 282px;
-    height: 70px;
-    border-radius: 35px;
-    background: #ff4141;
-    border: none;
-    color: white;
-    font-size: 22px;
-    font-weight: 500;
-    margin-top: 30px;
-    cursor: pointer;
+  width: 282px;
+  height: 70px;
+  border-radius: 35px;
+  background: #ff4141;
+  border: none;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 30px;
+  cursor: pointer;
 }
 
 .offers-right {
-    /* flex: 1; */
+  /* flex: 1; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .offers {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+  }
+  .offers-left {
+    padding: 10px;
+
+    .h1_dark {
+      font-size: 60px;
+    }
+    .h1_light {
+      font-size: 60px;
+    }
+  }
+  .offers-right {
+    padding-top: 30px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    padding-top: 50px;
+
+    img {
+      width: 90%;
+      height: 80%;
+    }
+  }
 }

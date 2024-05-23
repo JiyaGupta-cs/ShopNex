@@ -45,7 +45,7 @@ const Footer = () => {
       </div>
       <div className={`footer-copyright_${theme}`}>
         <hr className={`hr_${theme}`} />
-        <p>Copyright @ {new Date().getFullYear()} - All Rights Reserved</p>
+        <p>Copyright @ 2023 - All Rights Reserved</p>
       </div>
     </div>
   );

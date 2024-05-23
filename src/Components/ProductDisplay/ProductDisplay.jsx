@@ -19,9 +19,10 @@ const ProductDisplay = (props) => {
   const handleQuantityChange = (quantity) => {
     setSelectedQuantity(quantity);
   };
- const {theme}=useContext(ShopContext);
+  const { theme } = useContext(ShopContext);
   return (
     <div className="productdisplay">
+      <img className="productdisplay-main-img_M" src={product.image} alt="" />
       <div className="productdisplay-left">
         <div className="productdisplay-img-list">
           <img src={product.image} alt="" />
@@ -118,15 +119,14 @@ const ProductDisplay = (props) => {
         >
           ADD TO CART
         </button>
-        <p className={"productdisplay-right-category pdiv_"+theme}>
+        <p className={"productdisplay-right-category pdiv_" + theme}>
           <span>Category : </span>Women, T-shirt, Crop Top
         </p>
-        <p className={"productdisplay-right-category pdiv_"+theme}>
+        <p className={"productdisplay-right-category pdiv_" + theme}>
           <span>Tags : </span>Modern, Latest
         </p>
       </div>
     </div>
   );
 };
-
 export default ProductDisplay;
