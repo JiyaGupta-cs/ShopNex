@@ -49,6 +49,7 @@
 .newsletter div button {
   width: 140px;
   height: 50px;
+  margin-right: 44px;
   border-radius: 80px;
   background: black;
   color: white;
@@ -56,8 +57,17 @@
   cursor: pointer;
   border: none;
   position: relative;
+
   right: 10.5%;
+
 }
+
+.newsletter div button:hover {
+  background-color: #454545;
+  font-size: 12px;
+
+}
+
 .newsletter {
   /* existing styles */
 
@@ -73,9 +83,11 @@
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
+
   100% {
     transform: translateY(0);
   }
