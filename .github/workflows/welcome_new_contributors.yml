@@ -14,15 +14,19 @@ jobs:
         with:
           script: |
             const author = context.payload.pull_request.user.login;
-            const commits = await github.paginate(github.repos.listCommits.endpoint.merge({ per_page: 100 }), res => res.data);
-            const authorCommits = commits.filter(commit => commit.author.login === author);
+            const { data: commits } = await github.repos.listCommits({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              per_page: 100
+            });
+            const authorCommits = commits.filter(commit => commit.author && commit.author.login === author);
             const isNewContributor = authorCommits.length === 0;
             console.log(`Is ${author} a new contributor? ${isNewContributor}`);
-            return isNewContributor; 
+            return { isNewContributor }; 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
+
       - name: Welcome message
-        if: steps.check_new_contributor.outputs.result == 'true'
+        if: steps.check_new_contributor.outputs.isNewContributor == 'true'
         run: |
           echo "Welcome, @$GITHUB_ACTOR! Thanks for your contribution 🎉"
