@@ -28,8 +28,6 @@
   color: #61dafb;
 }
 
-
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -38,9 +36,11 @@
     transform: rotate(360deg);
   }
 }
-.light_app{
+.light_app {
   background-color: #282c34;
+  padding-top: 115px;
 }
-.dark_app{
+.dark_app {
   background: white;
+  padding-top: 115px;
 }
