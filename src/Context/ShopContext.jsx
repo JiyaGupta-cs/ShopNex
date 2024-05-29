@@ -4,8 +4,10 @@ import all_product from "../Components/Assets/all_product";
 export const ShopContext = createContext(null);
 
 const ShopContextProvider = (props) => {
-  const [cartItems, setcartItems] = useState([]);
-  const [theme,setTheme]=useState("dark");
+  const [cartItems, setCartItems] = useState([]);
+  const [theme, setTheme] = useState("dark");
+  const [activeMenu, setActiveMenu] = useState("shop");
+
   const addToCart = (itemId, size, quantity) => {
     const existingCartItemIndex = cartItems.findIndex(item => item.id === itemId && item.size === size);
   
@@ -19,25 +21,23 @@ const ShopContextProvider = (props) => {
         }
         return item;
       });
-      setcartItems(updatedCartItems);
+      setCartItems(updatedCartItems);
     } else {
       const cartProduct = all_product.find((product) => product.id === itemId);
       cartProduct.size = size;
       cartProduct.quantity = quantity;
-      setcartItems([...cartItems, cartProduct]);
+      setCartItems([...cartItems, cartProduct]);
     }
   };
   
   const removeFromCart = (itemId) => {
-    setcartItems(cartItems.filter((product) => product.id !== itemId));
+    setCartItems(cartItems.filter((product) => product.id !== itemId));
   };
 
   const getTotalCartAmount = () => {
     return cartItems.reduce((total, product) => total + (product.new_price * product.quantity), 0);
   };
   
-  
-
   const getTotalCartItems = () => {
     return cartItems.length;
   };
@@ -46,12 +46,15 @@ const ShopContextProvider = (props) => {
     all_product,
     cartItems,
     theme,
+    activeMenu,
     addToCart,
     removeFromCart,
     getTotalCartAmount,
     getTotalCartItems,
     setTheme,
+    setActiveMenu,
   };
+
   return (
     <ShopContext.Provider value={contextValue}>
       {props.children}

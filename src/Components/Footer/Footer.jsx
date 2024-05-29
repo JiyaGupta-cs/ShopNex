@@ -8,25 +8,26 @@ import { Link } from "react-router-dom";
 import { ShopContext } from "../../Context/ShopContext";
 
 const Footer = () => {
-  const { theme } = useContext(ShopContext);
+  const { theme, setActiveMenu } = useContext(ShopContext);
+
   return (
     <div className="footer">
       <div className="footer-logo">
-        <img src={footer_logo} alt="" />
-        <p className={`footer_${theme}`}>ShopNex</p>
+        <Link to="/" onClick={() => setActiveMenu("shop")}>
+          <img src={footer_logo} alt="" />
+          <p className={`footer_${theme}`}>ShopNex</p>
+        </Link>
       </div>
       <ul className={"footer-links_" + theme}>
         <li>Company</li>
         <li>Products</li>
         <li>Offices</li>
         <li>
-          {" "}
           <Link className={`link_${theme}`} to="/about">
             About
           </Link>
         </li>
         <li>
-          {" "}
           <Link className={`link_${theme}`} to="/contact">
             Contact Us
           </Link>

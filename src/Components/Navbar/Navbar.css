@@ -1,3 +1,11 @@
+
+.nav-menu hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: #ff4141;
+}
 .navbar{
     display: flex;
     justify-content: space-around;
@@ -37,13 +45,7 @@
     cursor: pointer;
 }
 .nav-menu li a{text-decoration: none;}
-.nav-menu hr{
-    border: none;
-    width: 80%;
-    height: 3px;
-    border-radius: 10px;
-    background: #ff4141;
-}
+
 .nav-login-cart{
     display: flex;
     align-items: center;
