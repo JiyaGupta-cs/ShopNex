@@ -77,6 +77,9 @@
     background: red;
     color: white;
 }
+.menu-icon {
+    display: none;
+  }
 .dark_btn{
     width: 50px;
     height: 50px;
@@ -142,3 +145,78 @@ button{
 }
 
 
+@media (max-width: 1025px) {
+    .navbar{
+        display: flex;
+        box-shadow: 0 1px 3px -2px black;
+        height: 85px;
+        justify-content: space-around;
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        z-index: 1000;
+        top: 0;
+    }
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+      color: black;
+      padding: 5px;
+      margin: auto 0 ;
+      font-size: 40px;
+    }
+  
+    .nav-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(black,rgb(21, 19, 19));
+      opacity: 100%;
+      flex-direction: column;
+      transform: translateX(-100%);
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .nav-menu.open {
+      transform: translateX(0);
+      opacity: 0.8;
+      color: white !important;
+    }
+    .nav-menu li {
+      margin: auto;
+    }
+}
+@media (max-width: 400px) {
+    .shoppify-text {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: white;
+      display: none;
+    }
+  
+    .nav-menu.open {
+      display: flex;
+    }
+  
+    .nav-menu li {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .nav-login-cart {
+      display: flex;
+      align-items: center;
+    }
+  }

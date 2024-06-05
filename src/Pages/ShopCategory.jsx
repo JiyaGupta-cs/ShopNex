@@ -9,11 +9,12 @@ const ShopCategory = (props) => {
   const productsPerPage = 12;
   const [page, setPage] = useState(1);
   const [sorting, setSorting] = useState('');
+  
 
   let filteredProducts;
 
   if (props.category === 'kids') {
-    filteredProducts = all_product.filter(item => item.category === 'kids');
+    filteredProducts = all_product.filter(item => item.category === 'kid');
   } else {
     filteredProducts = all_product.filter(item => item.category === props.category);
     while (filteredProducts.length < 76) {
