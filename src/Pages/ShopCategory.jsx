@@ -50,7 +50,9 @@ const ShopCategory = (props) => {
           <select
             name="shopcategory-sort"
             value={sorting}
-            onChange={(e) => setSorting(e.target.value)}
+            onChange={(e) => setSorting(e.target.value)
+            }
+            className='sort'
           >
             <option value="0">Low to High</option>
             <option value="1">High to Low</option>

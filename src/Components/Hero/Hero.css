@@ -20,22 +20,22 @@
 
 .hero-left .h2h_dark{
     color: #090909;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 600;
 }
 .h2h_light{
     color: white;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 600;
 }
 .hero-left .ph_dark {
     color: #171717;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 700;
 }
 .ph_light{
     color: white;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 700;
 }
 .hero-hand-icon {

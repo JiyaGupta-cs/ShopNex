@@ -28,7 +28,7 @@ const Footer = () => {
         <li>
           {" "}
           <Link className={`link_${theme}`} to="/contact">
-            Contact Us
+            Contact
           </Link>
         </li>
       </ul>

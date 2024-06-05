@@ -10,14 +10,15 @@ margin-bottom:-200px;
 
 export const Container = styled.div`
 background-color: #ecf0f3;
-box-shadow: 12px 12px 16px 0 #b5bbc2, -8px -8px 12px 0 #f8fbff;
+// box-shadow: 12px 12px 16px 0 #b5bbc2, -8px -8px 12px 0 #f8fbff;
 border-radius: 10px;
 //box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 position: relative;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 overflow: hidden;
-width: 678px;
+width: 900px;
 max-width: 100%;
-min-height: 400px;
+min-height: 600px;
 margin:auto;
 // margin-top:100px;
 `;
@@ -61,6 +62,7 @@ flex-direction: column;
 padding: 0 50px;
 height: 100%;
 text-align: center;
+gap:12px
 `;
 
 export const Title = styled.h1`
@@ -70,9 +72,10 @@ margin: 0;
 
 export const Input = styled.input`
 background-color: #eee;
-box-shadow: 5px 5px 10px 0 #b5bbc2, -5px -5px 20px 0 #f8fbff;
+// box-shadow: 5px 5px 10px 0 #b5bbc2, -5px -5px 20px 0 #f8fbff;
+box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 border: none;
-padding: 12px 15px;
+padding: 15px 22px;
 margin: 8px 0;
 width: 100%;
 border-radius:20px;
@@ -81,7 +84,7 @@ border-radius:20px;
 
 export const Button = styled.button`
    border-radius: 20px;
-   border: 1px solid #ff4b2b;
+  //  border: 1px solid #ff4b2b;
    background-color: #ff4b2b;
    box-shadow: 5px 5px 10px 0 #b5bbc2, -5px -5px 20px 0 #f8fbff;
    color: #ffffff;
@@ -100,8 +103,8 @@ export const Button = styled.button`
   }
 `;
 export const GhostButton = styled(Button)`
-background-color: transparent;
-border-color: #ffffff;
+// background-color: transparent;
+// border-color: #ffffff;
 `;
 
 export const Anchor = styled.a`
