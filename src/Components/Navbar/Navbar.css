@@ -1,144 +1,164 @@
-.navbar{
+/* General Navbar Styles */
+.navbar {
     display: flex;
-    justify-content: space-around;
-    padding: 16px;
-    box-shadow: 0 1px 3px -2px black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    box-shadow: 0 1px 3px -2px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
 }
-.nav-logo{
+
+.nav-logo {
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
 .nav-logo-link {
     display: flex;
     align-items: center;
     text-decoration: none;
-  }  
-.nav-logo{
-    color: #171717;
-    font-size: 38px;
-    font-weight: 600;
 }
-.nav-menu{
+
+.nav-logo-img {
+    width: 50px;
+    height: auto;
+}
+
+.nav-title {
+    font-size: 32px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    margin-left: 8px; /* Adjusted for better positioning */
+}
+
+.nav-menu {
     display: flex;
-    align-items: center;
     list-style: none;
-    gap: 50px;
-    color: #626262;
-    font-size: 20px;
-    font-weight: 500;
+    gap: 30px;
 }
-.nav-menu li{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
+
+.nav-item {
+    position: relative;
     cursor: pointer;
 }
-.nav-menu li a{text-decoration: none;}
-.nav-menu hr{
+
+.nav-item a {
+    text-decoration: none;
+    color: #626262;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: #e1e1e1; /* Light color for hover effect */
+}
+
+.nav-item:hover a,
+.nav-item.active a {
+    color: #ff4141;
+}
+
+.nav-item hr {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
     border: none;
-    width: 80%;
+    width: 100%;
     height: 3px;
     border-radius: 10px;
     background: #ff4141;
+    margin: 0;
 }
-.nav-login-cart{
+
+.nav-login-cart {
     display: flex;
     align-items: center;
-    gap:45px;
+    gap: 20px;
 }
-.nav-login-cart .log_btn{
-    width: 157px;
-    height: 58px;
+
+.log_btn {
+    padding: 12px 24px;
     outline: none;
-    border:1px solid #7a7a7a;
+    border: 1px solid #7a7a7a;
     border-radius: 75px;
     color: #515151;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     background: white;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
-.nav-login-cart  .log_btn:active{
+
+.log_btn:hover {
     background: #f3f3f3;
 }
-.nav-cart-count{
+
+.cart {
+    width: 32px;
+    height: auto;
+}
+
+.nav-cart-count {
     width: 22px;
     height: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -35px;
-    margin-left: -55px;
-    border-radius: 11px;
+    margin-left: -16px;
+    border-radius: 50%;
     font-size: 14px;
     background: red;
     color: white;
 }
-.dark_btn{
-    width: 50px;
-    height: 50px;
-}
-.dark{
-    background: linear-gradient(180deg, black, #e1ffea22 90%);
-}
-.pnav_dark{
-    color: #171717;
-    font-size: 38px;
-    font-weight: 600;
-}
-.pnav_light{
-    color: white;
-    font-size: 38px;
-    font-weight: 600;
-}
-.cart{
-    width: 42px;
-    height: 42px;
-}
-button{
+
+.toggle-theme {
+    width: 40px;
+    height: 40px;
     border: none;
-}
-
-.toggle_dark{
-  background-color:orange;
-  color: white;
-}
-.toggle_light{
-    background-color: #515151;
-    color: white;
-}
-.change{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-.toggle_dark {
-    background-color: rgb(232, 212, 177);
-    color: white;
-}
-
-.toggle_light {
-    background-color: #515151;
-    color: white;
-}
-
-.change {
-    width: 50px;
-    height: 50px;
     border-radius: 50%;
-    border: none;
+    background: #515151;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background 0.3s ease;
 }
 
-.change img {
-    width: 80%;
+.toggle-theme img {
+    width: 60%;
     height: auto;
 }
 
+.toggle-theme.light {
+    background: #515151;
+}
 
+.toggle-theme.dark {
+    background: orange;
+}
+
+/* Dark Theme */
+.dark {
+    background: #333;
+}
+
+.dark .nav-title {
+    color: white;
+}
+
+.dark .nav-item a {
+    color: white;
+}
+
+.dark .log_btn {
+    background: #515151;
+    color: white;
+    border: 1px solid white;
+}
+
+.dark .toggle-theme {
+    background: orange;
+}

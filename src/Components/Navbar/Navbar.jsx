@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import './Navbar.css';
 import logo from '../Assets/logo.png';
 import cart_icon from '../Assets/cart_icon.png';
@@ -13,58 +13,46 @@ const Navbar = () => {
     const [menu, setMenu] = useState("shop");
     const { getTotalCartItems, theme, setTheme } = useContext(ShopContext);
 
-    const toggle = () => {
+    useEffect(() => {
         if (theme === "dark") {
-            setTheme("light");
             setIcon(cart_icon_dark);
-            const dnav = document.getElementById("nav");
-            dnav.classList.add("dark");
+            document.getElementById("nav").classList.add("dark");
         } else {
-            setTheme("dark");
             setIcon(cart_icon);
-            const dnav = document.getElementById("nav");
-            dnav.classList.remove("dark");
+            document.getElementById("nav").classList.remove("dark");
         }
+    }, [theme]);
+
+    const toggleTheme = () => {
+        setTheme(theme === "dark" ? "light" : "dark");
     };
 
     return (
         <div className={`navbar`} id="nav">
             <div className="nav-logo">
                 <Link className="nav-logo-link" to="/">
-                    <img src={logo} alt="ShopNex Logo" style={{ marginRight: '10px' }} />
-                    <p className={`pnav_${theme}`}>ShopNex</p>
+                    <img src={logo} alt="ShopNex Logo" className="nav-logo-img" />
+                    <p className={`nav-title ${theme}`}>ShopNex</p>
                 </Link>
             </div>
             <ul className="nav-menu">
-                <li onClick={() => { setMenu("shop") }}>
-                    <Link to='/'>Shop</Link>
-                    {menu === "shop" ? <hr /> : <></>}
-                </li>
-                <li onClick={() => { setMenu("men") }}>
-                    <Link to='/men'>Men</Link>
-                    {menu === "men" ? <hr /> : <></>}
-                </li>
-                <li onClick={() => { setMenu("women") }}>
-                    <Link to='/women'>Women</Link>
-                    {menu === "women" ? <hr /> : <></>}
-                </li>
-                <li onClick={() => { setMenu("kids") }}>
-                    <Link to='/kids'>Kids</Link>
-                    {menu === "kids" ? <hr /> : <></>}
-                </li>
+                {['shop', 'men', 'women', 'kids'].map((item) => (
+                    <li key={item} className={`nav-item ${menu === item ? 'active' : ''}`} onClick={() => setMenu(item)}>
+                        <Link to={`/${item === 'shop' ? '' : item}`}>{item.charAt(0).toUpperCase() + item.slice(1)}</Link>
+                        {menu === item && <hr />}
+                    </li>
+                ))}
             </ul>
             <div className="nav-login-cart">
                 <Link to='/login'><button className='log_btn'>Login</button></Link>
-                <Link to='/cart'><img src={icon} alt="" className='cart' /></Link>
+                <Link to='/cart'><img src={icon} alt="Cart" className='cart' /></Link>
                 <div className="nav-cart-count">{getTotalCartItems()}</div>
-                <div className='dark_btn'>
-                    <button onClick={toggle} className={`toggle_${theme} change`}>
-                        {theme === 'light' ? <img src={sunIcon}  /> : <img src={moonIcon}  />}
-                    </button>
-                </div>
+                <button onClick={toggleTheme} className={`toggle-theme ${theme}`}>
+                    <img src={theme === 'light' ? sunIcon : moonIcon} alt="Theme Toggle" />
+                </button>
             </div>
         </div>
-    )
+    );
 }
 
 export default Navbar;
