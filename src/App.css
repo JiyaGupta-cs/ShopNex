@@ -44,3 +44,7 @@
 .dark_app{
   background: white;
 }
+
+*{
+  border-radius: 10px;
+}
