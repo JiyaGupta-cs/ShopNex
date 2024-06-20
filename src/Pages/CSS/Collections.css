@@ -130,3 +130,58 @@
     width: calc(100% - 20px);
   }
 }
+
+
+.item-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(33.333% - 20px); /* Assuming you want 3 items per row */
+  box-sizing: border-box;
+  transition: transform 0.3s;
+}
+
+.item-card:hover {
+  transform: scale(1.05);
+}
+
+.item-image-container {
+  width: 100%;
+  height: 400px; /* Set a fixed height for the images */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.item-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.item-image:hover {
+  transform: scale(1.1);
+}
+
+.collection-products {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-left: 1px solid #ddd;
+  padding-left: 20px;
+}
+
+.popular-item {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+img{
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  width: 100%;
+}
