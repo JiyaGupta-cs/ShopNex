@@ -31,7 +31,12 @@ const Footer = () => {
       </div>
       <ul className={"footer-links_" + theme}>
         <li>Company</li>
-        <li>Products</li>
+        <li>
+          {" "}
+          <Link className={`link_${theme}`} to="/" onClick={scrollToTop}>
+            Products
+          </Link>
+        </li>
         <li>Offices</li>
         <li>
           {" "}
