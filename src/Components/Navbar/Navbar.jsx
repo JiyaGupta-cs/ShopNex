@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import './Navbar.css';
 import logo from '../Assets/logo.png';
 import cart_icon from '../Assets/cart_icon.png';
@@ -13,19 +13,41 @@ const Navbar = () => {
     const [menu, setMenu] = useState("shop");
     const { getTotalCartItems, theme, setTheme } = useContext(ShopContext);
 
-    const toggle = () => {
+    // Function to toggle theme
+    const toggleTheme = () => {
         if (theme === "dark") {
             setTheme("light");
             setIcon(cart_icon_dark);
-            const dnav = document.getElementById("nav");
-            dnav.classList.add("dark");
+            localStorage.setItem('theme', 'light'); // Store theme preference in localStorage
         } else {
             setTheme("dark");
             setIcon(cart_icon);
-            const dnav = document.getElementById("nav");
-            dnav.classList.remove("dark");
+            localStorage.setItem('theme', 'dark'); // Store theme preference in localStorage
         }
     };
+
+    // Effect to set theme when component mounts
+    useEffect(() => {
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme) {
+            setTheme(storedTheme);
+            if (storedTheme === 'dark') {
+                setIcon(cart_icon_dark);
+            } else {
+                setIcon(cart_icon);
+            }
+        }
+    }, []); // Empty dependency array ensures this effect runs only once on mount
+
+    // Update theme-related classes dynamically
+    useEffect(() => {
+        const nav = document.getElementById("nav");
+        if (theme === 'dark') {
+            nav.classList.add('dark');
+        } else {
+            nav.classList.remove('dark');
+        }
+    }, [theme]); // Run this effect whenever theme changes
 
     return (
         <div className={`navbar`} id="nav">
@@ -58,8 +80,8 @@ const Navbar = () => {
                 <Link to='/cart'><img src={icon} alt="" className='cart' /></Link>
                 <div className="nav-cart-count">{getTotalCartItems()}</div>
                 <div className='dark_btn'>
-                    <button onClick={toggle} className={`toggle_${theme} change`}>
-                        {theme === 'light' ? <img src={sunIcon}  /> : <img src={moonIcon}  />}
+                    <button onClick={toggleTheme} className={`toggle_${theme} change`}>
+                        {theme === 'light' ? <img src={sunIcon} alt="Light Mode" /> : <img src={moonIcon} alt="Dark Mode" />}
                     </button>
                 </div>
             </div>
