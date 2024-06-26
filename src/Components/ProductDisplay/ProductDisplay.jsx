@@ -4,6 +4,8 @@ import start_icon from "../Assets/star_icon.png";
 import start_dull_icon from "../Assets/star_dull_icon.png";
 import { useLinkClickHandler } from "react-router-dom";
 import { ShopContext } from "../../Context/ShopContext";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ProductDisplay = (props) => {
   const { product } = props;
@@ -113,11 +115,16 @@ const ProductDisplay = (props) => {
         </div>
         <button
           onClick={() => {
-            addToCart(product.id, selectedSize, selectedQuantity);
+            addToCart(product.id, selectedSize, selectedQuantity)
+            toast.success("Item added to cart",{
+              autoClose:1500,
+              closeButton: false
+            })
           }}
-        >
+        > 
           ADD TO CART
         </button>
+        <ToastContainer toastStyle={{fontWeight:"bold",marginTop:"68px"}}/>
         <p className={"productdisplay-right-category pdiv_"+theme}>
           <span>Category : </span>Women, T-shirt, Crop Top
         </p>

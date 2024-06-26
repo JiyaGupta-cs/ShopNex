@@ -12,6 +12,7 @@ import women_banner from "./Components/Assets/banner_women.png";
 import kids_banner from "./Components/Assets/banner_kids.png";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
+import NotFound from "./Pages/NotFound";
 import ScrollToTop from "react-scroll-to-top";
 import { useContext, useEffect } from "react";
 import { ShopContext } from "./Context/ShopContext";
@@ -44,6 +45,7 @@ function App() {
           <Route path="/login" element={<LoginSignup />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
           <Route path="/offers" element={<Offers />} />
           <Route path="/collections" element={<Collections />} />
         </Routes>

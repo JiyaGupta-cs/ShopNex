@@ -33,7 +33,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3px;
+    /* gap: 3px; */
     cursor: pointer;
 }
 .nav-menu li a{text-decoration: none;}
@@ -141,4 +141,10 @@ button{
     height: auto;
 }
 
+.nav-menu hr{
+    margin: 0;
+}
 
+.nav-menu li.active a {
+    color: #ff4141;
+}

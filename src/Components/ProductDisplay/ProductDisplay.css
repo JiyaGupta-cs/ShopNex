@@ -61,6 +61,11 @@
 }
 .ph1_light{
     color:white;
+    margin-bottom: 0px;
+}
+
+.ph1_dark{
+    margin-bottom:0px;
 }
 .productdisplay-right-sizes{
     display: flex;
