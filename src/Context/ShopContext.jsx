@@ -1,10 +1,12 @@
 import React, { createContext, useState } from "react";
 import all_product from "../Components/Assets/all_product";
+import {useLocalStorage} from "../Hooks/uselocalstorage";
 
 export const ShopContext = createContext(null);
 
 const ShopContextProvider = (props) => {
-  const [cartItems, setcartItems] = useState([]);
+  const [cartItems, setcartItems] = useLocalStorage("shopping cart",[]);
+
   const [theme,setTheme]=useState("dark");
   const addToCart = (itemId, size, quantity) => {
     const existingCartItemIndex = cartItems.findIndex(item => item.id === itemId && item.size === size);
@@ -19,6 +21,7 @@ const ShopContextProvider = (props) => {
         }
         return item;
       });
+
       setcartItems(updatedCartItems);
     } else {
       const cartProduct = all_product.find((product) => product.id === itemId);
@@ -26,6 +29,8 @@ const ShopContextProvider = (props) => {
       cartProduct.quantity = quantity;
       setcartItems([...cartItems, cartProduct]);
     }
+
+
   };
   
   const removeFromCart = (itemId) => {
@@ -33,13 +38,13 @@ const ShopContextProvider = (props) => {
   };
 
   const getTotalCartAmount = () => {
-    return cartItems.reduce((total, product) => total + (product.new_price * product.quantity), 0);
+    return  cartItems.reduce((total, product) => total + (product.new_price * product.quantity), 0);
   };
   
   
 
   const getTotalCartItems = () => {
-    return cartItems.length;
+    return cartItems.length
   };
 
   const contextValue = {

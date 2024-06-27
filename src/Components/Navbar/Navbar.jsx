@@ -5,7 +5,7 @@ import cart_icon from '../Assets/cart_icon.png';
 import cart_icon_dark from '../Assets/cart_icon_dark.png';
 import moonIcon from '../Assets/dark_mode.png';
 import sunIcon from '../Assets/light_mode.png';
-import { Link } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import { ShopContext } from '../../Context/ShopContext';
 
 const Navbar = () => {
@@ -26,6 +26,14 @@ const Navbar = () => {
             dnav.classList.remove("dark");
         }
     };
+    const navigate = useNavigate()
+
+    const credentials = localStorage.getItem("signinemail")
+
+    const LogOutClick = () => {
+        localStorage.setItem("signinemail","")
+        navigate("/login")
+    }
 
     return (
         <div className={`navbar`} id="nav">
@@ -54,7 +62,7 @@ const Navbar = () => {
                 </li>
             </ul>
             <div className="nav-login-cart">
-                <Link to='/login'><button className='log_btn'>Login</button></Link>
+                {credentials !== "" && <button onClick={LogOutClick} className='log_btn'>Log Out</button>}
                 <Link to='/cart'><img src={icon} alt="" className='cart' /></Link>
                 <div className="nav-cart-count">{getTotalCartItems()}</div>
                 <div className='dark_btn'>

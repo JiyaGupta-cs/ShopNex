@@ -20,12 +20,16 @@ import Collections from "./Pages/Collections";
 import Offers from "./Pages/Offers";
 function App() {
   const { theme } = useContext(ShopContext);
+  const user = localStorage.getItem("signinemail")
   return (
     <div className={`${theme}_app`}>
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Shop />} />
+          <Route path="/" element={
+              user !== ""?
+            <Shop /> : <LoginSignup/>
+          } />
           <Route
             path="/men"
             element={<ShopCategory banner={men_banner} category="men" />}
