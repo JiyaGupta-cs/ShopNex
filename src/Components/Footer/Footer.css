@@ -38,8 +38,22 @@
     color: white;
     font-size: 20px;
 }
-.footer-links li {
+.footer-links_dark > li {
     cursor: pointer;
+}
+
+.footer-links_dark > li:hover{
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.footer-links_light > li {
+    cursor: pointer;
+}
+
+.footer-links_light > li:hover{
+    text-decoration: underline;
+    font-weight: 600;
 }
 .footer-social-icon {
     display: flex;

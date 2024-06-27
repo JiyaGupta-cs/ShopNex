@@ -6,12 +6,16 @@
 .shopcategory-loadmore {
   /* Styles for the Explore More button */
   background-color: #ff5733 !important; 
-  color: #fff; /* Text color */
+  color: #fff; 
   padding: 10px 15px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+.shopcategory-sort_dark{
+  cursor: pointer;
+}
+
 
 .shopcategory-loadmore:hover {
-  background-color: #e64a2e !important; /* Change color on hover */
+  /* background-color: #e64a2e !important; Change color on hover */
 }

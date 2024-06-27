@@ -28,6 +28,9 @@
     font-size: 20px;
     font-weight: 500;
 }
+
+
+
 .nav-menu li{
     display: flex;
     flex-direction: column;
@@ -37,6 +40,13 @@
     cursor: pointer;
 }
 .nav-menu li a{text-decoration: none;}
+
+.nav-menu li a:hover{
+    color: #fa35d9;
+    font-weight: 700;
+    font-size: 21px;
+}
+
 .nav-menu hr{
     border: none;
     width: 80%;
@@ -81,6 +91,9 @@
     width: 50px;
     height: 50px;
 }
+
+
+
 .dark{
     background: linear-gradient(180deg, black, #e1ffea22 90%);
 }
@@ -100,6 +113,11 @@
 }
 button{
     border: none;
+}
+
+.log_btn:hover{
+    background-color: #FF4B2B;
+    color: white;
 }
 
 .toggle_dark{
