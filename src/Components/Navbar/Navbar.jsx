@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import './Navbar.css';
 import logo from '../Assets/logo.png';
 import cart_icon from '../Assets/cart_icon.png';
@@ -9,21 +9,25 @@ import { Link } from 'react-router-dom';
 import { ShopContext } from '../../Context/ShopContext';
 
 const Navbar = () => {
-    const [icon, setIcon] = useState(cart_icon);
-    const [menu, setMenu] = useState("shop");
     const { getTotalCartItems, theme, setTheme } = useContext(ShopContext);
+    const [icon, setIcon] = useState(theme === "dark" ? cart_icon_dark : cart_icon);
+    const [menu, setMenu] = useState("shop");
+
+    useEffect(() => {
+        if (theme === "dark") {
+            document.getElementById("nav").classList.add("dark");
+            setIcon(cart_icon_dark);
+        } else {
+            document.getElementById("nav").classList.remove("dark");
+            setIcon(cart_icon);
+        }
+    }, [theme]);
 
     const toggle = () => {
         if (theme === "dark") {
             setTheme("light");
-            setIcon(cart_icon_dark);
-            const dnav = document.getElementById("nav");
-            dnav.classList.add("dark");
         } else {
             setTheme("dark");
-            setIcon(cart_icon);
-            const dnav = document.getElementById("nav");
-            dnav.classList.remove("dark");
         }
     };
 
@@ -64,7 +68,7 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Navbar;
