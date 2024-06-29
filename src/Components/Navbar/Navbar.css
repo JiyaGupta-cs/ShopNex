@@ -1,8 +1,16 @@
+#nav{
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    margin-bottom: 30%;
+}
 .navbar{
     display: flex;
     justify-content: space-around;
     padding: 16px;
     box-shadow: 0 1px 3px -2px black;
+    background-color: pink;
 }
 .nav-logo{
     display: flex;

@@ -22,11 +22,13 @@
     color: #090909;
     font-size: 26px;
     font-weight: 600;
+    margin-top: 30%;
 }
 .h2h_light{
     color: white;
     font-size: 26px;
     font-weight: 600;
+    margin-top: 30%;
 }
 .hero-left .ph_dark {
     color: #171717;
@@ -70,7 +72,7 @@
     justify-content: center;
 }
 .hero-right img {
-  margin-top: 150px;
+  margin-top: 320px;
   margin-left: 138px;
 }
 
