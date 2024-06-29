@@ -85,12 +85,12 @@
     background: linear-gradient(180deg, black, #e1ffea22 90%);
 }
 .pnav_dark{
-    color: #171717;
+    color: #e0e0e0;
     font-size: 38px;
     font-weight: 600;
 }
 .pnav_light{
-    color: white;
+    color: #ffe082;
     font-size: 38px;
     font-weight: 600;
 }
