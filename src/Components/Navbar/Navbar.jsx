@@ -30,9 +30,10 @@ const Navbar = () => {
     return (
         <div className={`navbar`} id="nav">
             <div className="nav-logo">
-                <Link className="nav-logo-link" to="/">
+                <Link className="nav-logo-link" to="/" onClick={() => { setMenu("shop") }}>
                     <img src={logo} alt="ShopNex Logo" style={{ marginRight: '10px' }} />
                     <p className={`pnav_${theme}`}>ShopNex</p>
+                    {menu === "shop" ? <hr /> : <></>}
                 </Link>
             </div>
             <ul className="nav-menu">
