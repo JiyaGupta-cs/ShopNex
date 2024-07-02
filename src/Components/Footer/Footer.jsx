@@ -42,7 +42,7 @@ const Footer = () => {
         <li>
           {" "}
           <Link className={`link_${theme}`} to="/contact" onClick={scrollToTop}>
-            Contact Us
+            Contact&nbsp;Us
           </Link>
         </li>
       </ul>

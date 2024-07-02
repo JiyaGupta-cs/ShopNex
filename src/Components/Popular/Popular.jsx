@@ -8,6 +8,7 @@ const Popular = () => {
     const{theme}=useContext(ShopContext);
     return (
         <div className='popular'>
+            <br></br>
             <h1 className={`h1p_${theme}`}>POPULAR IN WOMEN</h1>
             <hr className={`hrp_${theme}`} />
             <div className="popular-item">
