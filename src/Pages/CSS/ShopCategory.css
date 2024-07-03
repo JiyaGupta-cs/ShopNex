@@ -19,8 +19,7 @@
   border: 1px solid #888;
   -moz-appearance: none;
   -webkit-appearance: none;
-  background: url("../../Components/Assets/dropdown_icon.png") no-repeat right
-    center;
+ 
   background-position: calc(100% - 15px) center;
   font-size: 16px;
 }
@@ -32,12 +31,63 @@
   border: 1px solid #ffffff;
   -moz-appearance: none;
   -webkit-appearance: none;
-  background: url("../../Components/Assets/dropdown_icon.png") no-repeat right
-    center;
+ 
   background-position: calc(100% - 15px) center;
   font-size: 16px;
   background: rgb(255, 255, 255);
 }
+/* Wrapper for the label and select elements */
+.shopcategory-sort-wrapper {
+  display: flex;           /* Use flexbox to align items horizontally */
+  align-items: center;     /* Center items vertically */
+  padding: 8px 12px;       /* Add padding for overall spacing */
+
+}
+
+/* Style for the label */
+.sort-label {
+  margin-right: 10px;  /* Space between label and select */
+  font-size: 16px;     /* Font size for the label */
+}
+
+/* Remove default appearance and style the select element */
+.custom-select {
+  -webkit-appearance: none; /* Remove default styling in Chrome, Safari, Edge, Opera */
+  -moz-appearance: none;    /* Remove default styling in Firefox */
+  appearance: none;         /* Standard syntax */
+  padding: 8px 12px;        /* Padding inside the select */
+  border: 1px solid #888;   /* Border for the select */
+  border-radius: 30px;      /* Rounded corners for the select */
+  background-color: white;  /* Background color for the select */
+  background: url("../../Components/Assets/dropdown_icon.png") no-repeat right 10px center; /* Adjust background position */
+  font-size: 16px;          /* Font size for the select text */
+  outline: none;            /* Remove default focus outline */
+  width: 150px;             /* Width of the select element */
+  margin: 0;                /* Reset margin to avoid extra space */
+  padding-right: 30px;      /* Add space on the right to avoid text overlapping with the icon */
+}
+
+
+/* Add custom dropdown icon */
+.custom-select::after {
+  content: ''; /* No text content */
+  position: absolute; /* Position the icon absolutely */
+  right: 10px; /* Distance from the right edge */
+  top: 50%;    /* Vertical alignment */
+  transform: translateY(-50%); /* Center the icon vertically */
+  width: 12px;   /* Width of the icon */
+  height: 12px;  /* Height of the icon */
+
+  pointer-events: none; /* Ensure the icon doesn't interfere with clicks */
+}
+
+/* Optional: Add some styles for focus state */
+.custom-select:focus {
+  border-color: #007BFF; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow for focus effect */
+}
+
+
 
 .shopcategory-sort option {
   text-align: left;

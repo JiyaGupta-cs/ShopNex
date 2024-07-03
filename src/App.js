@@ -14,10 +14,15 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import NotFound from "./Pages/NotFound";
 import ScrollToTop from "react-scroll-to-top";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { ShopContext } from "./Context/ShopContext";
 import Collections from "./Pages/Collections";
 import Offers from "./Pages/Offers";
+import Cookie from "./Components/Footer/Policy/Cookie";
+import Shipping from "./Components/Footer/Policy/Shipping";
+import Return from "./Components/Footer/Policy/Return";
+import TermsOfService from "./Components/Footer/Policy/TermsOfService";
+import Privacy from "./Components/Footer/Policy/Privacy";
 function App() {
   const { theme } = useContext(ShopContext);
   return (
@@ -48,6 +53,11 @@ function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="/offers" element={<Offers />} />
           <Route path="/collections" element={<Collections />} />
+          <Route path="/cookie-policy" element={<Cookie/>} />
+          <Route path="/shipping-policy" element={<Shipping/>} />
+          <Route path="/return-policy" element={<Return/>} />
+          <Route path="/terms-of-service" element={<TermsOfService/>}/>
+          <Route path="/privacy-policy" element={<Privacy/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

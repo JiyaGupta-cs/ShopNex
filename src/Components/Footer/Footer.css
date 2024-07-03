@@ -6,7 +6,16 @@
     gap: 50px;
     margin-top: 170px;
 }
-
+.footer-links a {
+    margin: 0 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
 .footer-logo {
     display: flex;
     align-items: center;

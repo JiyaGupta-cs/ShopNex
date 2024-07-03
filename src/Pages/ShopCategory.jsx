@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import './CSS/ShopCategory.css';
 import { ShopContext } from '../Context/ShopContext';
-import dropdown_icon from '../Components/Assets/dropdown_icon.png';
+
 import Item from '../Components/Item/Item';
 
 const ShopCategory = (props) => {
@@ -46,8 +46,10 @@ const ShopCategory = (props) => {
           <span>{`Showing ${startIndex + 1}-${endIndex}`}</span> out of {totalProducts} products
         </p>
         <div className={`shopcategory-sort_${theme}`}>
-          Sort By
-          <select
+        <div class="shopcategory-sort-wrapper">
+        <span class="sort-label">Sort By</span>
+          
+          <select class="custom-select"
             name="shopcategory-sort"
             value={sorting}
             onChange={(e) => setSorting(e.target.value)}
@@ -55,7 +57,7 @@ const ShopCategory = (props) => {
             <option value="0">Low to High</option>
             <option value="1">High to Low</option>
           </select>
-          {/* <img src={dropdown_icon} alt='' /> */}
+          </div>
         </div>
       </div>
       <div className='shopcategory-products'>

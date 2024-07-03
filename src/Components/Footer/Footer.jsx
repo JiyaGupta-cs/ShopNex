@@ -60,6 +60,14 @@ const Footer = () => {
       <div className={`footer-copyright_${theme}`}>
         <hr className={`hr_${theme}`} />
         <p>Copyright @ {new Date().getFullYear()} - All Rights Reserved</p>
+        <div className="footer-links">
+        <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+        <a href="/terms-of-service" target="_blank" rel="noopener noreferrer">Terms of Service</a>
+        <a href="/return-policy" target="_blank" rel="noopener noreferrer">Return Policy</a>
+        <a href="/shipping-policy" target="_blank" rel="noopener noreferrer">Shipping Policy</a>
+        <a href="/cookie-policy" target="_blank" rel="noopener noreferrer">Cookie Policy</a>
+        
+      </div>
       </div>
     </div>
   );

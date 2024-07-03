@@ -1,0 +1,50 @@
+.return-policy {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .return-policy h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #444;
+  }
+  
+  .return-policy h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .return-policy p {
+    margin-bottom: 15px;
+  }
+  
+  .return-policy ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .return-policy ul li {
+    margin-bottom: 10px;
+  }
+  
+  .return-policy a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .return-policy a:hover {
+    text-decoration: underline;
+  }
+  
