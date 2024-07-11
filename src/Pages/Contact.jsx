@@ -5,18 +5,27 @@ import { ShopContext } from '../Context/ShopContext';
 const Contact = () => {
   const {theme}=useContext(ShopContext);
   return (
-    <div className={"container-my_"+theme}>
-      <h1 id="myheading">
-        Contact Us
-      </h1>
-      <p>
-      This is the official page of Shopnix, where you can share all your queries, feedback, complaints, or any concern you may have about our products.
-      </p>
-      <p>
-      In Case of any grievance, don't hesitate to get in touch with us on our official contact number xxxxxxxxxx. Or you can write to us at xyz@gmail.com.
-      </p>
-
+    <div className="contact-container">
+      <div className="contact-header">
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you!</p>
       </div>
+      <form className="contact-form">
+        <div className="form-group">
+          <label htmlFor="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div className="form-group">
+          <label htmlFor="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" className="submit-button">Send Message</button>
+      </form>
+    </div>
   );
 };
 
