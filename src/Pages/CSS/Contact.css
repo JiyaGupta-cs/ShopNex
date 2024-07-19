@@ -1,29 +1,102 @@
-.container-my_dark{
+/* Base styles */
+.container-my_dark,
+.container-my_light {
     margin: 40px;
     margin-left: 60px;
     display: flex;
     flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 8px;
+    height: auto;
+     width: 80%}
+
+.container-my_light {
+    background-color: white;
+    color: black;
+
 }
-.container-my_light{
-    margin: 40px;
-    margin-left: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    color:white;
+
+/* Base styles */
+.container-my_dark #myheading {
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
+
 }
-#myheading{
+
+.container-my_light #myheading {
+  color: red;
+  
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
+
+}
+
+.container-my_dark {
+    background-color: #333;
+    color: white;
+}
+
+#myheading {
     width: 100%;
     align-content: center;
-    margin-bottom: 30px;
+    font-size: 2em;
+    margin-bottom: 20px;
+
 }
-.content{
+
+.content {
     margin-top: 0;
     flex-shrink: 1;
     display: flex;
     flex-wrap: wrap;
 }
 
-.list{
+.list {
     flex-wrap: wrap;
     width: 400px;
+}
+
+/* Link styles */
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
