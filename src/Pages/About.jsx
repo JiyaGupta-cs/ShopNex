@@ -5,6 +5,9 @@ import { ShopContext } from '../Context/ShopContext';
 
 const About = () => {
   const {theme}=useContext(ShopContext);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className={'about_page_'+theme}>
       <h1 className="text-center mt-4" id = "aboutheading"><strong>About Us</strong></h1>
