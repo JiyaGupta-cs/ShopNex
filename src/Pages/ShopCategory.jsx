@@ -12,8 +12,8 @@ const ShopCategory = (props) => {
 
   let filteredProducts;
 
-  if (props.category === 'kids') {
-    filteredProducts = all_product.filter(item => item.category === 'kids');
+  if (props.category === 'kids' || props.category === 'kid') {
+    filteredProducts = all_product.filter(item => item.category === 'kid');
   } else {
     filteredProducts = all_product.filter(item => item.category === props.category);
     while (filteredProducts.length < 76) {
