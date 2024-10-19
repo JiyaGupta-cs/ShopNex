@@ -32,7 +32,7 @@ const Navbar = () => {
             <div className="nav-logo">
                 <Link className="nav-logo-link" to="/">
                     <img src={logo} alt="ShopNex Logo" style={{ marginRight: '10px' }} />
-                    <p className={`pnav_${theme}`}>ShopNex</p>
+                    <p className={`pnav_${theme}`}>ShopApp</p>
                 </Link>
             </div>
             <ul className="nav-menu">
