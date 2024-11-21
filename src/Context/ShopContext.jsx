@@ -1,20 +1,26 @@
 import React, { createContext, useState } from "react";
 import all_product from "../Components/Assets/all_product";
+import { useEffect } from "react";
 
 export const ShopContext = createContext(null);
 
 const ShopContextProvider = (props) => {
   const [cartItems, setcartItems] = useState([]);
-  const [theme,setTheme]=useState("dark");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme]);
   const addToCart = (itemId, size, quantity) => {
-    const existingCartItemIndex = cartItems.findIndex(item => item.id === itemId && item.size === size);
-  
+    const existingCartItemIndex = cartItems.findIndex(
+      (item) => item.id === itemId && item.size === size
+    );
+
     if (existingCartItemIndex !== -1) {
       const updatedCartItems = cartItems.map((item, index) => {
         if (index === existingCartItemIndex) {
           return {
             ...item,
-            quantity: item.quantity + quantity
+            quantity: item.quantity + quantity,
           };
         }
         return item;
@@ -27,16 +33,17 @@ const ShopContextProvider = (props) => {
       setcartItems([...cartItems, cartProduct]);
     }
   };
-  
+
   const removeFromCart = (itemId) => {
     setcartItems(cartItems.filter((product) => product.id !== itemId));
   };
 
   const getTotalCartAmount = () => {
-    return cartItems.reduce((total, product) => total + (product.new_price * product.quantity), 0);
+    return cartItems.reduce(
+      (total, product) => total + product.new_price * product.quantity,
+      0
+    );
   };
-  
-  
 
   const getTotalCartItems = () => {
     return cartItems.length;

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import './Navbar.css';
 import logo from '../Assets/logo.png';
 import cart_icon from '../Assets/cart_icon.png';
@@ -9,26 +9,22 @@ import { Link } from 'react-router-dom';
 import { ShopContext } from '../../Context/ShopContext';
 
 const Navbar = () => {
-    const [icon, setIcon] = useState(cart_icon);
-    const [menu, setMenu] = useState("shop");
     const { getTotalCartItems, theme, setTheme } = useContext(ShopContext);
+    const [icon, setIcon] = useState(theme === "dark" ? cart_icon_dark : cart_icon);
+    const [menu, setMenu] = useState("shop");
+
+    
 
     const toggle = () => {
         if (theme === "dark") {
             setTheme("light");
-            setIcon(cart_icon_dark);
-            const dnav = document.getElementById("nav");
-            dnav.classList.add("dark");
         } else {
             setTheme("dark");
-            setIcon(cart_icon);
-            const dnav = document.getElementById("nav");
-            dnav.classList.remove("dark");
         }
     };
 
     return (
-        <div className={`navbar`} id="nav">
+        <div className={`navbar sticky-top bg-${!theme}`} id="nav">
             <div className="nav-logo">
                 <Link className="nav-logo-link" to="/">
                     <img src={logo} alt="ShopNex Logo" style={{ marginRight: '10px' }} />
@@ -64,7 +60,7 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Navbar;
