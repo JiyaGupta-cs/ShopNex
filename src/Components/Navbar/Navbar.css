@@ -60,6 +60,11 @@
     font-weight: 500;
     background: white;
     cursor: pointer;
+    transition: 0.3s all linear;
+}
+.nav-login-cart  .log_btn:hover{
+    background: #ff4141;
+    color: #f3f3f3;
 }
 .nav-login-cart  .log_btn:active{
     background: #f3f3f3;
