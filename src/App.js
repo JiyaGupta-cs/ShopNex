@@ -14,7 +14,7 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import NotFound from "./Pages/NotFound";
 import ScrollToTop from "react-scroll-to-top";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { ShopContext } from "./Context/ShopContext";
 import Collections from "./Pages/Collections";
 import Offers from "./Pages/Offers";

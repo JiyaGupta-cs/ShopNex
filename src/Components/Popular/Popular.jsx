@@ -7,7 +7,7 @@ import { ShopContext } from '../../Context/ShopContext'
 const Popular = () => {
     const{theme}=useContext(ShopContext);
     return (
-        <div className='popular'>
+        <div className='popular p-4 '>
             <h1 className={`h1p_${theme}`}>POPULAR IN WOMEN</h1>
             <hr className={`hrp_${theme}`} />
             <div className="popular-item">

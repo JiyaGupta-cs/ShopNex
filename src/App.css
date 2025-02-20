@@ -44,3 +44,77 @@
 .dark_app{
   background: white;
 }
+/* Popular Component Styling */
+.popular {
+  width: 90%; /* Prevents stretching to full width */
+  max-width: 1200px; /* Keeps it within a manageable size */
+  margin: auto; /* Centers the div */
+  padding: 20px;
+  box-sizing: border-box; /* Ensures padding doesn’t increase width */
+  text-align: center; /* Aligns text centrally */
+}
+
+/* Title Styling */
+.h1p_light {
+  color: black;
+}
+
+.h1p_dark {
+  color: white;
+}
+
+.h1p_light, .h1p_dark {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Horizontal Line Styling */
+.hrp_light {
+  border: 2px solid black;
+  width: 60px;
+  margin: 0 auto 20px;
+}
+
+.hrp_dark {
+  border: 2px solid white;
+  width: 60px;
+  margin: 0 auto 20px;
+}
+
+/* Container for Items */
+.popular-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between items */
+  justify-content: center; /* Centers content */
+  padding: 10px;
+}
+
+/* Individual Item Styling */
+.item {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .popular {
+      width: 95%;
+  }
+
+  .h1p_light, .h1p_dark {
+      font-size: 24px;
+  }
+
+  .popular-item {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusts for smaller screens */
+  }
+}

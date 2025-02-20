@@ -1,10 +1,10 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import './Item.css';
 import { Link } from 'react-router-dom';
-import { ShopContext } from '../../Context/ShopContext';
+// import { ShopContext } from '../../Context/ShopContext';
 
 const Item = (props) => {
-  const { theme } = useContext(ShopContext);
+  // const {  } = useContext(ShopContext);
 
   return (
     <div className="product-card">

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import './Navbar.css';
 import logo from '../Assets/logo.png';
 import cart_icon from '../Assets/cart_icon.png';
@@ -13,17 +13,31 @@ const Navbar = () => {
     const [menu, setMenu] = useState("shop");
     const { getTotalCartItems, theme, setTheme } = useContext(ShopContext);
 
-    const toggle = () => {
-        if (theme === "dark") {
-            setTheme("light");
+    // ✅ Retrieve Theme from Local Storage on Page Load
+    useEffect(() => {
+        const savedTheme = localStorage.getItem("theme") || "light"; 
+        setTheme(savedTheme); 
+        if (savedTheme === "dark") {
             setIcon(cart_icon_dark);
-            const dnav = document.getElementById("nav");
-            dnav.classList.add("dark");
+            document.getElementById("nav").classList.add("dark");
         } else {
-            setTheme("dark");
             setIcon(cart_icon);
-            const dnav = document.getElementById("nav");
-            dnav.classList.remove("dark");
+            document.getElementById("nav").classList.remove("dark");
+        }
+    }, [setTheme]);
+
+    // ✅ Toggle Theme & Save to Local Storage
+    const toggle = () => {
+        const newTheme = theme === "dark" ? "light" : "dark";
+        setTheme(newTheme);
+        localStorage.setItem("theme", newTheme);  // ✅ Store theme in localStorage
+
+        if (newTheme === "dark") {
+            setIcon(cart_icon_dark);
+            document.getElementById("nav").classList.add("dark");
+        } else {
+            setIcon(cart_icon);
+            document.getElementById("nav").classList.remove("dark");
         }
     };
 
@@ -55,11 +69,11 @@ const Navbar = () => {
             </ul>
             <div className="nav-login-cart">
                 <Link to='/login'><button className='log_btn'>Login</button></Link>
-                <Link to='/cart'><img src={icon} alt="" className='cart' /></Link>
+                <Link to='/cart'><img src={icon} alt="Cart Icon" className='cart' /></Link>
                 <div className="nav-cart-count">{getTotalCartItems()}</div>
                 <div className='dark_btn'>
                     <button onClick={toggle} className={`toggle_${theme} change`}>
-                        {theme === 'light' ? <img src={sunIcon}  /> : <img src={moonIcon}  />}
+                        {theme === 'light' ? <img src={sunIcon} alt="Light Mode" /> : <img src={moonIcon} alt="Dark Mode" />}
                     </button>
                 </div>
             </div>
