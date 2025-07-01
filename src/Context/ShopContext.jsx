@@ -1,11 +1,15 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState, useEffect } from "react";
 import all_product from "../Components/Assets/all_product";
 
 export const ShopContext = createContext(null);
 
 const ShopContextProvider = (props) => {
   const [cartItems, setcartItems] = useState([]);
-  const [theme,setTheme]=useState("dark");
+  const [theme, setTheme] = useState(() => {
+    // Initialize theme from localStorage or default to "dark"
+    const savedTheme = localStorage.getItem('shopnex-theme');
+    return savedTheme || "dark";
+  });
   const addToCart = (itemId, size, quantity) => {
     const existingCartItemIndex = cartItems.findIndex(item => item.id === itemId && item.size === size);
   
@@ -41,6 +45,11 @@ const ShopContextProvider = (props) => {
   const getTotalCartItems = () => {
     return cartItems.length;
   };
+
+  // useEffect hook for localStorage persistence of theme
+  useEffect(() => {
+    localStorage.setItem('shopnex-theme', theme);
+  }, [theme]);
 
   const contextValue = {
     all_product,
